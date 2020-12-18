@@ -1,4 +1,4 @@
-# Project Name User Guide iSkyLIMS v2.0.0
+# User Guide iSkyLIMS v2.0.0
 
 ## Introduction
 Put an introduction here.
