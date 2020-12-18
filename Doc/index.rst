@@ -6,7 +6,12 @@ Documents
 .. toctree::
    :maxdepth: 16
 
-   user-guide
+   chapter_user-guide
+   chapter_introduction
+   chapter_quick_start
+   chapter_seq_objects
+   chapter_seq_annot
+   chapter_seqio
    
 
 .. toctree::
