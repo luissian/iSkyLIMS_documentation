@@ -3,15 +3,10 @@ iSkyLIMS
 
 Documents
 =========
-.. toctree::
-   :maxdepth: 16
-
-   user-guide
-   introduction
-   quick_start
-   seq_objects
-   seq_annot
-   seqio
+```
+* [Title1](doc1.md)
+* [Title2](doc2.md)
+```
    
 
 
