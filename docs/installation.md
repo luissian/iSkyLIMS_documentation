@@ -7,3 +7,9 @@ Software designed to handle those tasks are called Laboratory Information Manage
 iSkyLIMS is born with the aim of helping with the wet laboratory tasks, and implementing a workflow that guides genomics labs on their activities from library preparation to data production, reducing potential errors associated to high throughput technology, and facilitating the quality control of the sequencing. 
 
 Also, iSkyLIMS connects the wet lab with dry lab facilitating data analysis by bioinformaticians.
+
+## Installation prerequisites
+
+estos son los prerequistos
+
+* [User Guide](user_guide.md)
