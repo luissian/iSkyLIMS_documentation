@@ -8,5 +8,5 @@ Documents
 
    iSkyLIMS installation
    installation
-   iSkyLIMS description
+
    user_guide
