@@ -6,6 +6,7 @@ Documents
 .. toctree::
    :maxdepth: 16
 
-   Introduction
+   iSkyLIMS installation
    installation
+   iSkyLIMS description
    user_guide
