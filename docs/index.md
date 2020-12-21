@@ -24,24 +24,16 @@ Contents
 ## User types
 
 
+# Installation
+
+# Massive sequencing
+
+# Service requesting
 
 
 
 # Documents
 =========
 
-* [Introduction](introduction.md)
-
-## documento 1
-pepepe es pepe
-
-* [User Guide](user_guide.md)
-
-### documento 1.1
-a workflow that guides genomics labs on their activities from library preparation to data production, reducing potential errors associated to high throughput tec
 
 # Mi guia
-========
-poro pwece
-* [User Guide](user_guide.md)
-pepito de los palotes
