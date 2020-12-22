@@ -16,6 +16,8 @@ Contents
 * [Installation](installation.md)
 * [Admin Configuration](admin_configuration.md)
 * [Massive Sequencing](installation.md)
+
+
   * [Wet lab Manager configuration](wetlab_manager_configuration.md)
   * [Wet lab User configuration](wetlab_user_configuration.me)
 * [Service Requesting](installation.md)
