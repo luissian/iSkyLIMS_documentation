@@ -21,21 +21,4 @@ Contents
 * [Service Requesting](installation.md)
   * [Service Manager configuration](drylab_manager_configuration.md)
 
-## User types
-
-
-# Installation
-* [Installation](installation.md)
-
-# Massive sequencing
-* [Wet lab Manager configuration](wetlab_manager_configuration.md)
-
-# Service requesting
-
-
-
-# Documents
-=========
-
-
-# Mi guia
+# [Prueba](instalacion.md)
