@@ -26,8 +26,8 @@ Contents
 
 
 ## User types
-
-# [Installation](wetlab_manager_configuration.md)
+# [Introduction](introduction.md)
+# [Installation](installation.md)
 
 # Massive sequencing [Wet lab Manager configuration](wetlab_manager_configuration.md)
 
