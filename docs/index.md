@@ -4,10 +4,9 @@
 
 ## User types
 
-# Installation
+# [Installation](wetlab_manager_configuration.md)
 
-# Massive sequencing
-* [Wet lab Manager configuration](wetlab_manager_configuration.md)
+# Massive sequencing [Wet lab Manager configuration](wetlab_manager_configuration.md)
 
 # Service requesting
 
