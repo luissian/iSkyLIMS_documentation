@@ -14,10 +14,10 @@ For any problems or bug reporting please post us an [issue](https://github.com/B
 
 Contents
 --------
-# [Introduction](introduction.md)
-# [Installation](installation.md)
-# [Admin Configuration](admin_configuration.md)
-# [Massive Sequencing](installation.md)
+# Introduction
+# Installation
+# Admin Configuration
+# Massive Sequencing
 
 
 *   Wet lab Manager configuration](wetlab_manager_configuration.md)
