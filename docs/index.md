@@ -22,5 +22,5 @@ Contents
 
 *   Wet lab Manager configuration](wetlab_manager_configuration.md)
 *   [Wet lab User configuration](wetlab_user_configuration.me)
-*   Service Requesting](installation.md)
+*   Service Requesting](Installation.md)
 *   [Service Manager configuration](drylab_manager_configuration.md)
