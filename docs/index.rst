@@ -14,3 +14,4 @@ RST files:
    :glob:
 
    rst
+   Installation
