@@ -79,3 +79,42 @@ From the Profile section, assign the user to the right Center that his/her belon
 ![new user definition](images/admin_configuration/admin_add_new_user-2.png)
 Add the additional information and click on the SAVE bottom.
 A new page is presented to add additional information
+
+
+Scroll down to the personal info and enter the “First name”, “Last name” and the email address.
+![new user definition](images/admin_configuration/admin_add_new_user-3.png)
+
+At this moment you could also assign the admin permission to this user, by selecting the “Staff status” check box.
+
+However, it is recommended that only admin user can access to the Django administration, to prevent that existing information could be deleted/altered by error.
+
+At this point, you can define if this new user will have the manager role for any of the modules or for all of them. To define user roles, just select them on the Available groups and click on the “arrow” icon to move them to the “Chosen group”.
+iSkyLIMS does not use the “Available user permission”, keep all of them in this panel.
+
+The **second option** for creating a new user, we mention before, is that the user himself register in iSkyLIMS.
+
+The new user needs to open the navigator, going to the main iSkyLIMS page to click on REGISTER button located in the menu.
+
+![Register User](images/admin_configuration/admin_register_user-1.png)
+
+Then the registration form is showed and user can enter the credential information.
+
+![Register User](images/admin_configuration/admin_register_user-2.png)
+
+![Register User](images/admin_configuration/admin_register_user-4.png)
+By using this way of user creation, user cannot assign himself to any of the manager groups. So this procedure will be used mainly by the user which are not required to have manager privileges.
+But of course, admin user can assign manager privileges, for user that have register by themselves.
+
+### Sharing List
+
+Scrolling down to the form there is a section called “Sharing list”.
+
+![Register User](images/admin_configuration/admin_register_user-5.png)
+
+The reason for having the sharing list it is quite simple. As we said, a normal user can only see/modify the samples/ analysis/ service request, etc that belong to him. So he is the responsible for the information included in iSkyLIMS.
+However, there are situations that this behavior needs to be changed because other people in their team needs to take over the activities, because of illness, vacations, etc. Sometimes because the unit organization has a person responsible for requesting an activity that is different from the person owner of data.
+
+This a clear example when all the requesting services are centralized in one person. This person cannot select in the requested form, the samples for the analysis, because he is not owner of any samples.
+To solve this situation, the sharing list utility is created.  Each user can select the “friendly” users that are allow to see/modify/select the samples. To populate this list, the user, select the name of the people he wants to share in the “Available user to share” panel and click on the arrow icons to move them to “Your Shared user list” panel.
+
+Then in the previous scenario, when the owner sample user adds, in their shared list, the name of the responsible for requesting a service, these samples will be displayed, for selecting in the form to create the service request.
