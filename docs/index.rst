@@ -7,6 +7,7 @@ Markdown files:
    :glob:
 
    markdown
+   user_guide
 
 RST files:
 
