@@ -13,9 +13,11 @@ For any problems or bug reporting please post us an [issue](https://github.com/B
 Contents
 --------
 * [API Reference](api_ref.md)
+* [Introduction](Introduction.md)
 * [AutoStructify Component](auto_structify.md)
 * [Installation instruction](Installation.md)
-* [Introduction](Introduction.md)
+* [Admin configuration](AdminConfiguration.md)
+
 
 
 
