@@ -118,3 +118,11 @@ This a clear example when all the requesting services are centralized in one per
 To solve this situation, the sharing list utility is created.  Each user can select the “friendly” users that are allow to see/modify/select the samples. To populate this list, the user, select the name of the people he wants to share in the “Available user to share” panel and click on the arrow icons to move them to “Your Shared user list” panel.
 
 Then in the previous scenario, when the owner sample user adds, in their shared list, the name of the responsible for requesting a service, these samples will be displayed, for selecting in the form to create the service request.
+
+
+## [Admin configuration in massive sequencing](massiveSequencing/AdminConfiguration.md)
+Click on the link above to continue the configuration on massive sequencing
+
+
+## [Admin configuration in Requesting services](massiveSequencing/AdminConfiguration.md)
+Click on the link above to continue the configuration on massive sequencing

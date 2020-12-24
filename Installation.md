@@ -1,4 +1,4 @@
-# iSkyLIMS installation
+# Installation Instruction
 
 The introduction of massive sequencing (MS) in genomics facilities has meant an exponential growth in data generation, requiring a precise tracking system, from library preparation to fastq file generation, analysis and delivery to the researcher.
 
