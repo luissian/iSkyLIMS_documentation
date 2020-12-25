@@ -15,9 +15,13 @@ Contents
 * [Introduction](Introduction.md)
 * [Installation Instruction](Installation.md)
 * [Admin Global Configuration](AdminConfiguration.md)
+
+--------
+Massive Sequencing
 * [Massive Sequencing Configuration](/massiveSequencing/massiveSequencing.md)
 * [Wetlab Manager Configuration](massiveSequencing/wetlabManagerConfiguration.md)
 * [Massive Sequencing Guide](massiveSequencing/userGuide.md)
+---
 
 
 

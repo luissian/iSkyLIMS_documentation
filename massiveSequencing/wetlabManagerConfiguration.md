@@ -1,5 +1,4 @@
-Wetlab Manager Configuration
-============================
+# Wetlab Manager Configuration
 
 The following configuration is only available when your user login belongs to the “Wetlab Manager” group.
 

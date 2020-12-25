@@ -1,4 +1,4 @@
-# Massive Sequencing Configuration
+Massive Sequencing Configuration
 ================================
 
 When selecting the available options in the user forms, these values require that they are created in advance, to allow them to be selected.

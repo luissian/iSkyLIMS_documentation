@@ -166,7 +166,7 @@ html_logo = 'images/logo_iSkyLIMS2.png'
 # template names.
 html_theme_options = {
     'logo_only': True,
-    'display_version': False,
+    'display_version': True,
 }
 
 

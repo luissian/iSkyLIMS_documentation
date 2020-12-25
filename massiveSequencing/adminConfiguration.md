@@ -1,5 +1,5 @@
-Massive Sequencing (Admin configuration)
-========================================
+# Massive Sequencing (Admin configuration)
+
 
 When selecting the available options in the user forms, these values require that they are created in advance, to allow them to be selected. These forms are available only If the logged user has manager permission.
 
