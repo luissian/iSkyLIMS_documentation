@@ -20,7 +20,7 @@ Contents
 Massive Sequencing
 * [Massive Sequencing Admin Configuration](/massiveSequencing/massiveSequencing.md)
 * [Wetlab Manager Configuration](massiveSequencing/wetlabManagerConfiguration.md)
-* [Massive Sequencing Guide](massiveSequencing/userGuide.md)
+* [Massive Sequencing Investigator Guide](massiveSequencing/userGuide.md)
 ---
 
 
