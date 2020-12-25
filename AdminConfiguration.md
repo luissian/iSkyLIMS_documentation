@@ -1,4 +1,4 @@
-Admin Configuration
+Admin Global Configuration
 ===================
 
 The scope of iSkyLIMS was that, it could be used for different organization with different requirements when handling samples in the laboratory.
