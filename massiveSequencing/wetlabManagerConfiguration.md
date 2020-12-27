@@ -8,14 +8,13 @@ There are 4 main groups for configuration:
 *   Initial settings definitions
 *   Protocol and Parameters definitions
 *   Samples parameter definitions
+*   Molecule uses
 *   Commercial Kits used in the laboratory
 
 
 ## Initial settings
-This section will show you how to define the initial data that Massive Sequencing module needs as base from where the rest of information is referenced to.
-
+This section will show you how to define the initial data that Massive Sequencing module needs as base from where the rest of information is referenced to.  
 During the installation already some data are loaded in database, but if you need to add extra information follow the instructions bellow.  
-
 There are 4 type of information that you need to define in the  **initial settings**
 *   Species
 *   Sample Origin
@@ -28,6 +27,7 @@ For selecting these settings select **Preliminary Preparation --> Initial Settin
 
 ### Species definition
 Define the name of the species that you are working with by clicking on the "Species" Tab.
+
 ![species form](../images/wetlab_configuration/species_definition_form.png)
 
 Write the specie name and click on the Submit button.
@@ -99,12 +99,12 @@ To define a new protocol  select from the main menu PRELIMINARY PREPARATION  
 
 **Description**, write some information about the scope and use of this protocol.
 
-```
-You have to repeat this process to define a protocol for each protocol type defined:
+
+> You have to repeat this process to define a protocol for each protocol type defined:
 - "DNA Extraction" or "RNA Extraction" or both
   (depends on the sequence types, used in your organization)
 - "Library Preparation"
-```
+
 
 After click on the submit button the confirmation page is displayed allowing to continue with parameter used on this protocol.
 
@@ -241,11 +241,60 @@ for each sample are:
 Inside the kits configuration, the following type of kits need to be defined:
 *   Define the Collection Index kits
 *   Define Commercial Kits
+*   Protocol kits
 *   User Lot Commercial Kits
 
-To store the different information that each organization needs for the laboratory samples, makes that iSkyLIMS has to be flexible by adding in the forms those parameters, but also do not consider the ones that we found as recommended.
 
-To explain better, the “Samples Parameters”, let me show to you the information that you need to fill in, when defining a new sample.
+### Define the Collection Index kits
+
+The collection index are the indexes that will be used in the preparation of the library.
+During iSkyLIMS installation a set of collection index kits (according to version 1.18.1.0 of IEM) are loaded in iSkyLIMS.
+
+In case that in your laboratory use other index, you can store your own collection index kit using the option "Add Collection Index Kit" from the PRELIMINARY PREPARATION menu.
+
+![](../images/wetlab_configuration/collection_index_kit_form.png)
+
+
+```
+If you need to upload an Illumina collection kits, from a new IEM version, the
+files can be fetched, after the Illumina experiment manager (IEM) is installed,
+under folder “C:\Program Files (x86)\Illumina\Illumina Experiment Manager\IndexKits”.
+```
+If you want to upload a customized or from other vendor, the upload file must be in the Illumina index kit format.
+
+Select the file and click on the Submit button to upload the file.
+
+On the right side, the defined Collection index kit are listed. You can get a detail information of the Collection kit by clicking on the collection index name.
+
+On the collection index information page you can see the library version, the name of the plate and the sequence of the adapters that the collection index kit uses.
+
+In case that adapter 2 is not used in the collection index it is displayed as empty
+
+![](../images/wetlab_configuration/collection_index_kit_display_1.png)
+
+The middle part is related to the index that kit uses. They are divided in 2 columns:
+*   the one of the left contains the index name and the index sequence for the i7,
+*   and on the right column the ones used for I5.
+
+If a collection index is created for having “Single Read” it does not have the I5 indexes and the column on the right is not showed.
+
+You can export the index table to excel file clicking on the “Export Table To Excel” button.
+
+![](../images/wetlab_configuration/collection_index_kit_display_2.png)
+The last part contain the default layout recommended by Illumina. If you need it, you can download the settings layout by clicking on the “Export Table To Excel” button.
+
+
+### Define Commercial Kits
+
+User with Manager permission is responsible to select the best commercial kit for the activity in the Lab, based on their experience and of course on the available budget.
+To define a new commercial kit, select the “Add Commercial Kit” from the PRELIMINARY PREPARATION option menu.
+
+In the new page a form is showed to include the kit information.  The first field is a select list from the protocols defined previously. Select the one that will be used for the commercial kit
+
+
+Add the kit information as well as a short description for the kit and click the submit button to save the information.
+
+### User Lot Commercial Kits
 
 
 ## Summary
