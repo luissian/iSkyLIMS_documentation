@@ -99,12 +99,12 @@ To define a new protocol  select from the main menu PRELIMINARY PREPARATION  
 
 **Description**, write some information about the scope and use of this protocol.
 
-
+---
 > You have to repeat this process to define a protocol for each protocol type defined:
-- "DNA Extraction" or "RNA Extraction" or both
-  (depends on the sequence types, used in your organization)
-- "Library Preparation"
-
+>> *    "DNA Extraction" or "RNA Extraction" or both
+>>      (depends on the sequence types, used in your organization)
+>> *    "Library Preparation"
+---
 
 After click on the submit button the confirmation page is displayed allowing to continue with parameter used on this protocol.
 
@@ -236,6 +236,14 @@ for each sample are:
     Define Sample Project  form.
 ```
 
+## Molecule use Definition
+After processing in the laboratory the molecule extraction , either DNA or RNA, you need to define if the if you will use this molecule for massive sequencing or not.  
+To set this configuration select PRELIMINARY PREPARATION -->**Define Molecule Use**
+
+![](../images/wetlab_configuration/molecule_use_form.png)
+
+Write the name of the use for the molecule and click on the checkbox if it is used for massive sequencing.
+
 ## Commercial Kits used in the laboratory
 
 Inside the kits configuration, the following type of kits need to be defined:
@@ -286,16 +294,47 @@ The last part contain the default layout recommended by Illumina. If you need it
 
 ### Define Commercial Kits
 
-User with Manager permission is responsible to select the best commercial kit for the activity in the Lab, based on their experience and of course on the available budget.
-To define a new commercial kit, select the “Add Commercial Kit” from the PRELIMINARY PREPARATION option menu.
+The number of kits is used in many forms for collecting sample data workflow, to identify the lot number that was used in the sample.   
+Having the lot number that was used in every sample process, allows to have statistics about the usage, identify which samples were processed with a specific/faulty lot,  but also it will help you in your internal/external audit.  
+To help you in the usage of laboratory kits we have split the kits into 2 groups.
+*   Commercial kits
+*   User Lot kits
 
-In the new page a form is showed to include the kit information.  The first field is a select list from the protocols defined previously. Select the one that will be used for the commercial kit
+The idea of **Commercial Kits** definition is to define general information of the kit, to avoid to repeat every time that a new user Lot Kit is defined.
 
+To define a new commercial kit, select the **Add Commercial Kit** from the PRELIMINARY PREPARATION option menu.
 
-Add the kit information as well as a short description for the kit and click the submit button to save the information.
+In the commercial Kit form there are 2 tabs for the 2 different uses:
+*   Used in Protocols
+*   Used in platforms
+
+![](../images/wetlab_configuration/commercial_kit_for_protocols_form.png)
+
+Kits defined for protocols requires for fill the following information.
+*   **Select the Protocols used for the Kit**. Select from the list, all the protocols that you defined before, that are used for the kit.
+*   **Select the Kit Provider company**.
+*   **Cat No./ID**. Write the product code of the kit.
+*   **Kit name**. Write the kit name that is used later for assigned the user lot kit.
+*   **Description** Optionally write a description of the kit or any useful information
+
+Fill the information and click on the submit button to apply changes.  
+There are some kits that are not used for the protocols, but for the platform used for sequencing the samples.  
+For them we have define this specific kit for "used on platforms".
+
+![](../images/wetlab_configuration/commercial_kit_for_platform_form.png)
+
+*   **Select the Platform used for the Kit**. Select from the list, the platform that this kit is used.
+*   **Select the Kit Provider company**.
+*   **Cat No./ID**. Write the product code of the kit.
+*   **Kit name**. Write the kit name that is used later for assigned the user lot kit.
+*   **Description** Optionally write a description of the kit or any useful information
+
+Click the submit button to save the information.
 
 ### User Lot Commercial Kits
 
+We assigned the responsibility to fill the information about Lot kits to the investigator, because is the person who has more contact with the kits.  
+But in case that Wetlab Manager needs to add this information, we have included this option the me menu. Click on the link to know the parameters that you have to define in [Investigator Configuration](investigatorConfiguration.html#User-Lot-Kit-Configuration)
 
 ## Summary
 
