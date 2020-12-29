@@ -21,14 +21,14 @@ Contents
 
 * [Massive Sequencing Admin Configuration](/massiveSequencing/massiveSequencing.md)
 
-**Wetlab Manager Activities**
+    **Wetlab Manager Activities**
 
 * [Wetlab Manager Configuration](massiveSequencing/wetlabManagerConfiguration.md)
 * [Massive Sequencing WetlabManager workflow](massiveSequencing/wetlabManagerWorkflow.md)
 * [Massive Sequencing Search](massiveSequencing/searchGuide.md)
 * [Massive Sequencing Statistics](massiveSequencing/statisticsGuide.md)
 
-**Investigator Activities**
+    **Investigator Activities**
 
 * [Investigator Configuration](massiveSequencing/investigatorConfiguration.md)
 * [Massive Sequencing Investigator workflow](massiveSequencing/investigatorWorkflow.md)
