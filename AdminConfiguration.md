@@ -1,5 +1,5 @@
-Admin Global Configuration
-===================
+# Admin Global Configuration
+============================
 
 The scope of iSkyLIMS was that, it could be used for different organization with different requirements when handling samples in the laboratory.
 
@@ -120,9 +120,9 @@ To solve this situation, the sharing list utility is created.  Each user can sel
 Then in the previous scenario, when the owner sample user adds, in their shared list, the name of the responsible for requesting a service, these samples will be displayed, for selecting in the form to create the service request.
 
 
-## [Admin configuration in massive sequencing](massiveSequencing/AdminConfiguration.md)
+## [Massive Sequencing Admin Configuration](massiveSequencing/adminConfiguration.md)
 Click on the link above to continue the configuration on massive sequencing
 
 
-## [Admin configuration in Requesting services](massiveSequencing/AdminConfiguration.md)
+## [Admin configuration in Requesting services](massiveSequencing/adminConfiguration.md)
 Click on the link above to continue the configuration on massive sequencing

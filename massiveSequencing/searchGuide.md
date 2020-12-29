@@ -1,1 +1,299 @@
 # Massive Sequencing Search
+
+During the steps done before, in the previous chapters, we stored information in iSkyLIMS database. There are different ways to get the information stored and present it you. One of the way is by searching specific information to get back only this piece of information stored on database.  
+
+In the following chapters we describe the fields in the form and the result that you get when applying your query.
+
+## Get latest Run
+
+Many times we need to check the status of the last run created on iSkyLIMS. To identify for example if the Illumina Sequencer has completed, or there was any kind of error when fetching and processing the output files from the sequencer.
+
+To have a fast way to check it we have created a dedicate option on the menu. Select **Get Latest Run** from the Search menu.
+
+It will automatically find the latest run recorded on iSkyLIMS and it present a page where you can see the status of the run as well as the rest of information available for the run.
+
+
+In the picture below the Run is in “Recorded” state, remember that in this state the Run, was just created either by using the steps described in wetlab Manager Configuration **Create New Run** or in chapter 3.6 (Legacy) **Create/Repeat New NextSeq Run**.
+
+![](../images/wetlab_user_guide/wetlab_latest_run.png)
+
+You can see the small piece of information that is available at this time, but even it is the first steps in the recording data for the run, you get valuable information like; the date where the Run was created, which organization request the Run on iSkyLIMS, and the original sample sheet file.
+
+We want to highlight that when Run is on Recorded state you can make some actions on the Run definition:
+*   Change the Run Name
+*   Change the Library Kit
+
+To change the Run Name, click on the "pencil" icon which it is close to the run name and you will get the run name change form to modify the name and submit the change.
+
+![](../images/wetlab_user_guide/wetlab_run_name_change_form.png)
+
+Remember that the run name is important and it must be the same as it is in the runParameter.xml file created by the sequencer.
+
+If after defining the run name you find out that it was not the right one you can change it by typing the corrected one and click on the submit button.
+
+> Note that you can modify only the Run Name, when run is in Recorded state, once the run is moving forward this option is no longer available.
+
+When run is in Recorded state you can also change the library kit used in the run in the same as was done for changing the run name.
+
+
+## Get Incomplete Runs
+
+Could be, that from time to time, you need to know, not for a single Run but for all, it they are finished, or there was any error when processing the output files.
+
+For this proposal, we have created a direct option so you can quickly take a look at all the Run.  
+Select the **Get incomplete Runs** from the Search menu.
+
+Based on the pending "to be completed Runs" you can have more or less windows, because only if there is any run in this state the panel is showed. Well this is true for all the states but for the panel for Recorded Runs, it is always present even if there is no Runs in this state. We did it on propose to help you to identify if there is a run that is pending to run in the sequencer.
+
+There is one dedicated window for the Runs that are in:
+*   Error state
+*   Cancelled
+
+For the rest of the runs they are grouped and inside the “Runs pending to complete” window.
+When you reach this page you can see on top that there are 2 windows.
+
+![](../images/wetlab_user_guide/wetlab_incomplete_run_1.png)
+
+On the left side you can see all Runs that are in Recorded state. Remember that the run in this state means that the run was created on iSkyLIMS, but the sequencer has not yet crated the directory on the shared folder.  
+The information that is presented is:
+*   Run Name
+*   Recorded date
+*   Number of days in recorded
+
+Check this last column **Number of days in recorded** to identify if there was a problem with the run in the sequencer.
+On the right side there is a graphic where you can see the percentage for each of these groups.  
+If you want to get more information of the run, you can click on the run name. you will redirected to display run page.
+Scrolling down the page you can see which runs are in Error and which ones have been cancelled.   
+These windows are only show in case there are runs on theses state, if they are not presented means that you do not have run with errors or cancelled runs.
+
+![](../images/wetlab_user_guide/wetlab_incomplete_run_2.png)
+
+In the window for error runs you can see:
+*   Run Name
+*   Run date
+*   State before error
+*   Error type
+*   Number of days
+
+The information in **State before error** tell you in which state was the run before going to error.
+
+> Remember that is the process for getting the information from the sequencer output files, where a run can move to Error
+
+The information on the error type will give you an idea the error cause. The idea is that you correct the error manually and set back to the state previous to the error.
+
+Once the fault was corrected, click on the run name link to get the run information page. On top you will see a window (in red) that summarize the error information.
+
+![](../images/wetlab_user_guide/wetlab_re_run_after_corrected_error.png)
+
+On the bottom right there is a button **Corrected fault**.  
+Click on the button and the run state will move back to the previous state before the error.
+
+In this situation the run will enter again into the crontab and it will progress to the next step.
+You will get a confirmation page that the change was done succcesfully.
+
+![](../images/wetlab_user_guide/wetlab_successful_change_error_run.png)
+
+Going back to the previous windows, before the parenthesis on correcting error, you can see that on the right side there are the runs that were cancelled. When we talking about that a run was cancelled we are considering only the situation that sequencer was stopped for any reason either was the user which decided to stop the run or because the sequencer stop for technical reason.
+The information presented is:
+*   Run Name
+*   Run date
+*   Number of days
+
+Remember that the number of days are the number from the run was created until today.   
+A run that were cancelled has no possibility to run again with the same name, because we assume that the samples in the plate are no longer valid and it is need to repeat the process to have new library preparation samples for creating a new plate.
+
+The last window collect the information for the runs that were not in the previous states.
+
+![](../images/wetlab_user_guide/wetlab_incomplete_run_3.png)
+
+## Search by Run
+
+The previous 2 options, in the search menu, are shortcuts for searching runs that are no completed.  
+Now we are in the normal scenario when you need to get information for a specific run.
+
+For searching runs select **Search by RUN** in the Search menu.
+
+In the search run window there is one form on the left side and on the right side there is one small window, that when clicking on “Help” button a new window is open with a small description of each field.
+
+The fields in the search are optional, which means that you do not need to fill all data for each one. Neither you need to write the full name of the run, you can type part of the run name, and you will get the runs that match with your query.
+
+The input fields to make your query are:
+Run Name. Enter the run name that you want to get. There is no limitation for the minimum length of characters that you can type on this field. You can type just only one letter or the full name of the run, but keep in mind that entering few characters in this field you will get many matches.
+Platform.  
+Choose one of the platform option in the select form. By default, the following platform were defined on iSkyLIMS during the installation:
+*   Illumina: Mini-Seq
+*   Illumina: Mi-Seq
+*   Illumina:  Next-Seq
+*   Illumina: Hi-Seq
+*   Illumina: Hi-Seqx
+*   IonTorrent: PGM
+*   IonTorrent: S5
+*   IonTorrent: S5-XL
+*   Roche: 454
+*   Other
+
+![](../images/wetlab_user_guide/wetlab_search_run_form.png)
+
+Run state. Select one of the state that could have a Run.
+*   From Start Date. Select the date from where you can to start your search.  When you click on this field select the date using the calendar window that the navigator shows to you.
+*   End Date Search. Select the last date that a run was created.
+
+If you do not type any date on the “End Date Search”, means that you get the run created after this day until today.
+
+If you select only the “End Date Search” you get all runs created before this date.
+
+If you type both dates you will get the runs that are between this range of date.
+
+When you click on the submit button all the values you type will make and AND condition. It means that if you type in the run name and also select one options in Run state you will get all the runs that match your query.
+
+After you submit your query, there are 2 possible scenarios that you can get:
+*   Your query matches many Runs
+*   Only Run match the query  
+
+### Display Run information
+
+On the first scenario you will get a list with all runs that matches your query. You can refine your search going back to the previous form and add more conditions to reduce the number of matches.
+If you are happy with the list that you get, you can click on the run name to get the information for the run.
+
+![](../images/wetlab_user_guide/wetlab_search_run_list.png)
+
+The second scenario that we mention above was that you get only one result. In this case the run information page is showed.
+
+In the example below we have selected one Run that is completed, because in this way we can explain each of the information that is displayed. Remember that we collect this information from the output files of the sequencer (including the multiplexing done for bcl2fstq) and it is based on when this information is available, means that according to run progress state, you will get more information.
+
+On the top of the run information you get that on the right side there is basic information about the run like:
+State of the Run, the unit which requested the run, and at the bottom the Sample Sheet file used, which is ready for download when clicking on the “download” icon.
+
+![](../images/wetlab_user_guide/wetlab_display_run_1.png)
+
+There are several dates that we store and it is important to know:
+*   **Run was recorded on date**: It is the date that the run was created on iSkyLIMS.
+*   **Run date**: It is the date that sequencer starts the process
+*   **Run Completion Date**. It is the date that sequencer ends the sequencing process.
+*   **Bcl2Fastq finish Date**. It is the date that the script for running bcl2fastq ends.
+*   **Run Finish Date**. It is the date that iSkyLIMS finish to collect and process all the output files.
+
+Another useful information is the disk space that run folder uses for output files. We are split this size in three categories:
+*   Space used for images.
+*   Space used for Fasta files
+*   Space used for other files.
+
+This information has two readings. For one side it indicates the space used on the file to help system administrator to identify a possible lack of disk space and for other side to see if the size of the files is less than it was expected, which could mean that there were some problems when sequencing the run.
+
+On the right side there is a graphic which show the status of the Run. When it is completed the graphic show it at 100%, and when the run is recorded it is at 15%. In between and according to the run state a different percentage is showed. The percentage does not mean the time remaining until the run is completed but the percentage process executed on the run.  
+
+Below the graphic is a small window to indicate the Run quality vs other Runs. The idea with this graphic was to indicate with a value that could summarize if a run has a good quality. This functionality is not implemented yet, because we need to collect more run and get which quality information are collected for other people, to decide which quality parameter and the importance of these, to assign a dedicated weight to get a number to indicate the overall quality.  
+This functionality is not decided yet when it will be available, because it depends of external organization to provide us the information.
+
+The next figure that you can see is the graphic to compare the “mean quality” and the “Q> 30” quality for your run and the ones that are executed on the same year and using the same Chemistry.
+
+>Note that in order to present the different size of values that these 2 parameters have, the values have been normalized.
+
+![](../images/wetlab_user_guide/wetlab_display_run_2.png)
+
+From the graphic data you can identify how good or bad was your run, comparing your data (in green colour) versus the runs in the year (in yellow/orange colour).
+
+Below this graphic, on the right side, you can see the name of the projects that were included on this run. We have created this option to help you to move from the run to projects without searching for it.
+
+Click on the project name to get the information collected for the project.
+
+![](../images/wetlab_user_guide/wetlab_display_run_3.png)
+
+On the window below you can see the Index Library kit that was used for the run. We have given you the chance to modify the Index Library kit value by clicking on the pencil icon.
+
+On the left side you can see a bar “Parameters used in the Run” in grey with a “+” sign. Click on the “+” to see the information used on the sequencer for the run.
+
+![](../images/wetlab_user_guide/wetlab_display_run_4.png)
+
+The information collected here is the one which is included in the “runParameter.xml” file.
+
+One parameter I would like to mention because is the RunID. The value is the directory on the shared folder. By checking this value, you can go directly to the directory where are all the files for the run.
+
+We found this data very useful when need to troubleshoot on the run to see if there was missing files.
+
+The next table shows the summary of the Flowcell for the run
+
+![](../images/wetlab_user_guide/wetlab_display_run_5.png)
+
+
+The next graphic shows the percentage of reads for each project and the reads that cannot been assigned to any of the projects.
+
+![](../images/wetlab_user_guide/wetlab_display_run_6.png)
+
+The reason for this figure is that you could check if the number of reads for each project is in relation with the number of samples in the Run. It does not mean that if there are several projects inside a run they must have de same percentage of the run, because if one project has only 2 samples and the other project 20, you should have the same percentage relation in this graphic.
+
+One important thing to mention is the bar for the “Unable to identify the project”. This bar represents the percentage of the reads than after demultiplexing during the bcl2fastq conversion the indexes of the samples did not match with the indexes defined in the sample sheet for each sample.
+
+You normally get this percentage that cannot be assigned to any sample (at least it was our experience for several hundreds of runs that we have been working with), but the important is to how big is this percentage by comparing with the percentage on projects.  
+If this percentage is small is fine, but it on the contrary is similar to the projects bar, then you should troubleshoot the reason behind this big number.
+
+The table below split by lane for all project in the run
+
+![](../images/wetlab_user_guide/wetlab_display_run_7.png)
+
+The reads that cannot be assigned to any sample, they are grouped and named "Unable to identify". In the bar graphic figure above you see the percentage, the following tables show the number of reads for Flowcell and lane summary.
+
+![](../images/wetlab_user_guide/wetlab_display_run_8.png)
+
+The following table show the top list of the unknown barcodes, found in the run during the demultiplexing process. We have separated them by lane, to identify if the number of unknown barcodes are similar in all lanes, or on the contrary, if a lane has a big difference with the rest of lanes, which could mean that this lane was faulty.
+
+![](../images/wetlab_user_guide/wetlab_display_run_9.png)
+
+When troubleshooting demultiplexing issues, this list can be used to compare the expected index sequences (those in the sample sheet) to those that were found. Some common causes for poor demultiplexing that these lists can reveal are:
+*   Index sequences entered in the wrong orientation in the sample sheet.
+*   Incorrect index sequences entered in the sample sheet (eg, Nextera vs TruSeq UD or index A001 vs index A006).
+*   Sample mix ups between lanes.
+*   Poor Index Read sequencing quality.
+    *   Ns in the sequences represent positions where the base calling software was unable to make a base call.
+    *   For sequencing systems using Illumina one-channel (iSeq) or two-channel SBS chemistry (MiniSeq, NextSeq 500/550 and NovaSeq), poly-G sequences indicate that no index sequence was read.  Poly-G sequences are typical for PhiX reads, which are not indexed.
+
+In the table above shows the number of the unknown barcodes separated per lane, in the graphic below we have count all lanes and we show in a pie graphic to see the percentage for each one.
+
+Scrolling down you see a pie chart graphic done from the unknown barcode data.
+
+![](../images/wetlab_user_guide/wetlab_display_run_10.png)
+
+On the right side f the graphic there is a table which contains 2 columns:
+*   Unknow Sequence
+*   Index Matching
+
+The reason for this table is to identify if when the sample sheet was created, it was assigned a different index that the ones used when physically the library preparation, as it was mention on the troubleshooting demultiplexing paragraph.
+For example, “CTCTCTAC+AAAAAAAA” means that the index “CTCTCTAC” was found on the collection index kit, uploaded in iSkyLIMS. Then this index is showed in the Index Matching column. The index “AAAAAAAA” does not exist, nothing is showed in this case to see more clear that only one of the index was matched.
+
+Other cases you can see are for example “GGGGGGGG+AGATCTCG” neither index “GGGGGGGG” nor “AGATCTCG” were found, and in the Index Matching the text “Index not match” is showed.
+
+In case both of the indexes were found in the collection index kit stored on iSkyLIMS, both will be printed. For this situation you should troubleshoot on the sample sheet to identify a possible error when assigning the indexes.
+
+When mention that index is not found, we do not say that this index does not exist, but for the collection index kit uploaded to iSkyLIMS, the index was not found.
+
+On the bottom you can see the last part of information that is collected for the run. Three different tabs are defined:
+*   Run Metrics
+*   Lane Metrics
+*   Charts
+
+When click on **Run Metrics** tab you can see the following table.
+
+![](../images/wetlab_user_guide/wetlab_display_run_11.png)
+
+When selecting the **Lane Metrics** tab, the run information split by lane is showed. Scroll horizontal to see all columns.
+
+![](../images/wetlab_user_guide/wetlab_display_run_12.png)
+
+The last tab, Charts, show graphics to help you to check from a graphical way the quality of the run.  
+The graphics that are showed are:
+*   Data by lane
+*   Flow Cell Chart
+*   Data by Cycle
+*   QScore Heatmap
+*   QScore Distribution
+*   Indexing QC
+
+![](../images/wetlab_user_guide/wetlab_display_run_13.png)
+
+
+## Search by Project
+
+When we were describing the information that is displayed in the run, we talked that there is a link where you can see
+the project information. This is a way to get the project information, the other way is by searching by Project.  
+
+Select the **Search by Project** option on the Search menu.
