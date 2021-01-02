@@ -297,3 +297,182 @@ When we were describing the information that is displayed in the run, we talked 
 the project information. This is a way to get the project information, the other way is by searching by Project.  
 
 Select the **Search by Project** option on the Search menu.
+
+You will get a new form to indicate the values that you want to include for searching.  
+
+![](../images/wetlab_user_guide/wetlab_search_project_form.png)
+
+**Project Name**. Enter the project name that you want to get. There is no limitation for the minimum length of characters that you can type on this field  
+**Sequencer Machine**. Choose one of the Sequencer option in the select form.
+
+**Run state**. Projects dates are always related to the run dates, for that reason we mention about the run dates and not to projects dates.
+*   From Start Date. Select the date from where you can to start your search.  When you click on this field select the date using the calendar window that the navigator shows to you.
+*   End Date. Select the last date that a project was created.
+
+If you do not type any date on the “End Date”, means that you get the project created after this day until today.  
+If you select only the “End Date Search” you get all projects created before this date.   
+If you type both dates you will get the projects that are between this range of date.   
+
+**Search from user name**. Enter the investigator userid.
+
+When you click on the submit button all the values you type will make and AND condition. It means that if you type in the run name and also select one options in Run state you will get all the runs that match your query.
+
+After you submit your query, there are 2 possible scenarios that you can get:
+*   Your query matches many Projects
+*   Only one project match.  
+
+On the first scenario you will get a list with all projects that matches your query. You can refine your search going back to the previous form and add more conditions to reduce the number of matches.
+
+![](../images/wetlab_user_guide/wetlab_display_project_list.png)
+
+Click on the project name, that you were looking for to get the project information
+
+If only one project matches the query, the project information is displayed.
+
+### Display Project information
+
+The first window you see on top left contains basic information from the project. You can see the userID for the responsible of the project, dates, when project was recorded and the Collection Index Library Kit
+
+![](../images/wetlab_user_guide/wetlab_display_project_1.png)
+
+![](../images/wetlab_user_guide/wetlab_display_project_2.png)
+
+
+Scroll down to see a table with the samples that are belongs to this project, with a summary information for each sample.
+If you want to get information of one sample, click on the sample name to get a new page with sample information.
+
+![](../images/wetlab_user_guide/wetlab_display_project_3.png)
+
+## Search by Sample
+
+In the previous chapter we tell you the way for searching runs and project, now it is time for searching samples.  
+As you will see it is very similar as the previous search.  
+Select **Search by Sample** option from the SEARCH menu.
+
+When searching a sample there are 2 type of samples that iSkyLIMS will search:
+*   Samples which were defined in [Massive Sequencing Investigator workflow](investigatorWorkflow.md)
+*   Sample names that are collecting from the sequencer output files
+
+The fields that you have in the sample forms are:
+*   **Sample name**: Write the full name of the sample or just part of the sample name.
+*   **Sample State**: Choose an option from the select field. It is important to mention that this field only apply for the samples that were defined in [Massive Sequencing Investigator workflow](investigatorWorkflow.md)
+*   **From Date**. Select the date from where you can to start your search.  When you click on this field select the date using the calendar window that the navigator shows to you.
+*   **End Date**. Select the last date that a sample was created.
+
+If you do not type any date on the “End Date”, means that you get the project created after this day until today.  
+If you select only the “End Date” you get all samples created before this date.  
+If you type both dates you will get the samples that are between this range of date.  
+
+Although the search parameters are similar to the previous searches, however the results page will be a little different, because of these 2 types of sample definition.
+
+---
+To differentiate the two types of samples we will name:
+*   **Samples**, which were defined in chapter "Massive Sequencing Investigator workflow"  
+*   **Run samples** the ones collecting from the sequencer output files
+
+---
+
+Now you can get different results according to the matching results:
+*   Multiple matches in Samples and multiple matches on Run samples.
+
+![](../images/wetlab_user_guide/wetlab_search_sample_list_1.png)
+
+*   **Only one match on Samples and multiple matches on Run samples.**
+
+As you can see we have changed the normal behavior. When we were found only one match in run search or in projects search, it was displayed the full information of the run/project. We change because this time there are two different of queries that are triggered and you could be looking for the run quality information only.
+
+![](../images/wetlab_user_guide/wetlab_search_sample_list_2.png)
+
+*   **No match on Samples and multiple matches on Run samples.**
+
+This a particular case that you will have when the searching conditions in your query only matches Run samples. For example, when you only have samples information from the legacy runs.
+
+![](../images/wetlab_user_guide/wetlab_search_sample_list_3.png)
+
+*   **Multiple matches on Samples and only one match on Run samples.**
+
+You can get this scenario when you have defined samples, but not all of them are already handled by the sequencer.
+
+![](../images/wetlab_user_guide/wetlab_search_sample_list_4.png)
+
+*   **Multiple matches on Samples and no match on Run samples.**
+
+![](../images/wetlab_user_guide/wetlab_search_sample_list_5.png)
+
+As you can guess this is a particular case of the previous one, when the sequencer has not yet handled these samples. But as we mention before, when you are restricting your search based on the sample state, this field is only applicable for Samples group and not for the Run samples, for that reason when you select a sample state value the Run samples window will be always empty.  
+
+*   Only one match on Samples or only one match on Run samples.
+
+In case that either one match is found in Samples or only one match is found in Run samples you will get automatically the sample information window.
+
+### Sample Display Information for Run Samples
+
+When only one match is found for Run samples or when you click on one Run samples, then you get the information that was collected from the output files from the sequencer.
+
+What you see on the Run sample information is on the left side the basic information about the sample, to know the project name and the run name that this sample belongs to.
+
+![](../images/wetlab_user_guide/wetlab_display_run_sample_1.png)
+
+
+You can click on the project name or run name. to see the project/run information.
+On the right side there is a graphic to indicate the quality of the sample. This value is fetched from the percent of the quality >= Q30.
+Below there is the quality information for the sample where you can see:
+*   **indexes used**.
+*   **PF Cluster**
+*   **% of the Project**. That is the percentage of reads that this sample have in comparison with the rest of sample
+
+![](../images/wetlab_user_guide/wetlab_display_run_sample_2.png)
+
+*   **Yield** (in millions of bases)
+*   **>=Q30**. It is the percentage of the reads that sample has with a quality bigger than 30
+*   **Mean Quality Score**. It is the mean of all quality read in the sample.
+
+The last window is a graphic that show the percentage of this sample (in red), comparing it with the rest of the samples in the project.  
+From this graphic you can check if the sample percentage got based on the number of read it was as expected.
+
+![](../images/wetlab_user_guide/wetlab_display_run_sample_3.png)
+
+### Sample Display Information for Samples
+
+When there was only one sample that matched your query or you clicked on one of the sample you will get all the sample information that have been recording for the sample from the moment it was created in iSkyLIMS.
+Remember that this information is the one that it was manually added to iSkyLIMS through the different forms.
+The first window is related to the basic information from sample definition, where you can see:
+*   Sample Name. Name of the sample
+*   Sample CodeID. Code assigned to the sample. Check Chapter 3.9.1 Sample_CodeID.
+*   Sample State. State that has at this moment the sample, see Appendix 10.3 State Diagram.  Note that sample state changes in case of reusing sample see chapter 3.8 Reusing samples.
+*   Recorded Date. Date from the sample was defined in iSkyLIMS.
+*   Sample Type.
+*   Species
+*   Number of reused. Number of times that this sample was reused for a new molecule extraction, or new library preparation, etc. Each time that sample is reused this counter is stepped.
+*   User. User ID of the person who defined the sample in iSkyLIMS.
+
+## Search by Index Library
+
+Sometimes you need to check any information for the collection index.  
+When you are looking for the information that a specific collection index kit has, you can go to “Add collection Index Kit” inside the PRELIMINARY PREPARATION menu. Then look at the right side of the page and scroll down until you get the one that you are looking for, and click on the name to get the information.
+
+But in many cases, what you need to know is which collection index kit has/have a particular index, or barcode, etc.
+For that propose we have created a new search where you can find this information.
+
+Select “Search by Index Library” inside SEARCH menu.
+
+![](../images/wetlab_user_guide/wetlab_search_collection_index_form.png)
+
+*   **Collection Index Kit name**. Write the collection index kit name (or part of it) for filter by this field.
+*   **Adapter1**. Write the sequence used on the adapter1 that you want to search
+*   **Adapter2**. Same as before but for adapter2
+*   **Index name**. Write the index name used for I7 or for I5
+*   **Index Sequence**. Write the index sequence that you want to search.
+
+As it was commented before, any information that you type on the field is making an AND conditions.   
+When you write the sequence to search in the “Index Sequence”, iSkyLIMS will check first if the sequence is either defined on I7 sequence or in the I5 sequence. In case there is not match the reverse complement of the sequence is calculated to try to find a match.
+
+If there are more than one match then a list is displayed, to choose the right collection index kit that you were looking for.
+
+![](../images/wetlab_user_guide/wetlab_search_collection_index_list.png)
+
+Click on the collection index name to get full information.
+
+Check the chapter [Define the Collection Index kits](wetlabManagerConfiguration.html#Define-the-Collection-Index-kits) for detailed information.
+
+## Search by User Lot Kit

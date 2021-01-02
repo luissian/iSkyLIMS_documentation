@@ -341,15 +341,15 @@ But in case that Wetlab Manager needs to add this information, we have included 
 As you see, there is quite a lot initial configuration that Wetlab Manager has to define to customize iSkyLIMS to their requirements.
 
 We have created this chapter to summarize the configuration steps.
-1.  Define the Initial Settings
-2.  Define Protocols.
+*  Define the Initial Settings
+*  Define Protocols.
     *   For RNA Extraction
     *   For DNA Extraction
     *   For Library Preparation
-3.  Define Type of Samples
-4.  Define Project Samples
-5.  Define Molecule Use
-6.  Define the type of Kits used in the lab.
+*  Define Type of Samples
+*  Define Project Samples
+*  Define Molecule Use
+*  Define the type of Kits used in the lab.
     *   Define the Collection Index kits. (Add new Collection Index Kit if the already defined during the installation did not fit to you).
     *   Define the Commercial Kits used for:
         *   DNA extraction.

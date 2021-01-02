@@ -11,5 +11,3 @@ Also, iSkyLIMS connects the wet lab with dry lab facilitating data analysis by b
 ## Installation prerequisites
 
 estos son los prerequistos
-
-* [User Guide](user_guide.md)

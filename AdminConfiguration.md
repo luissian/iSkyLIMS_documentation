@@ -1,5 +1,4 @@
 # Admin Global Configuration
-============================
 
 The scope of iSkyLIMS was that, it could be used for different organization with different requirements when handling samples in the laboratory.
 
@@ -30,9 +29,9 @@ By default, 3 groups (“WetlabManager”, “ServiceManager” and “ClinicMan
 
 These are the groups that are used for iSkyLIMS and you do not need add new, but if for any reason you need to rename any of the group, then after login as “admin” user, open your Navigator and type:
 
-```
-http://<server_name or IP_address>/admin/auth/group/
-```
+
+> http://<server_name or IP_address>/admin/auth/group/
+
 
 Use your iSkyLIMS admin credentials to access to the group definition webpage.
 
@@ -40,19 +39,21 @@ Use your iSkyLIMS admin credentials to access to the group definition webpage.
 
 Type the name of the group and click on the “SAVE” button to apply your changes.
 
-```
-IMPORTANT
-Do not add any available permissions to the group.
-These are the Django permissions to access to database table.
-Adding permissions could make unpredictable errors in iSkyLIMS
-```
+---
+
+**IMPORTANT**  
+Do not add any available permissions to the group.  
+These are the Django permissions to access to database table.  
+Adding permissions could make unpredictable errors in iSkyLIMS  
+
+---
 
 ### Centers Definition
 Define the centers that will be in your organization using your admin credentials. Open your Navigator and type
-```
-http://<server_name or IP_address>/admin/django_utils/center
-```
-![Screenshot](images/admin_configuration/admin_add_center.png)
+
+> http://<server_name or IP_address>/admin/django_utils/center
+
+![](images/admin_configuration/admin_add_center.png)
 
 Type the Center Name and the Acronym used for the Center and click on the SAVE bottom to apply your changes.
 
@@ -65,24 +66,24 @@ To create a new user in iSkyLIMS there are 2 possible options:
 *   Users register themselves.
 
 For the first option after login with your admin credential, open your Navigator and type
-```
-http://<server_name or IP_address>/admin/auth/user
-```
+
+> http://<server_name or IP_address>/admin/auth/user
+
 You will get the Django administration form to create a new user.
 
-![new user definition](images/admin_configuration/admin_add_new_user-1.png)
+![](images/admin_configuration/admin_add_new_user-1.png)
 
 Type the username and the password
 
 From the Profile section, assign the user to the right Center that his/her belongs to from the available Center that you define in the previous step.
 
-![new user definition](images/admin_configuration/admin_add_new_user-2.png)
+![](images/admin_configuration/admin_add_new_user-2.png)
 Add the additional information and click on the SAVE bottom.
 A new page is presented to add additional information
 
 
 Scroll down to the personal info and enter the “First name”, “Last name” and the email address.
-![new user definition](images/admin_configuration/admin_add_new_user-3.png)
+![](images/admin_configuration/admin_add_new_user-3.png)
 
 At this moment you could also assign the admin permission to this user, by selecting the “Staff status” check box.
 
@@ -95,13 +96,13 @@ The **second option** for creating a new user, we mention before, is that the us
 
 The new user needs to open the navigator, going to the main iSkyLIMS page to click on REGISTER button located in the menu.
 
-![Register User](images/admin_configuration/admin_register_user-1.png)
+![](images/admin_configuration/admin_register_user-1.png)
 
 Then the registration form is showed and user can enter the credential information.
 
-![Register User](images/admin_configuration/admin_register_user-2.png)
+![](images/admin_configuration/admin_register_user-2.png)
 
-![Register User](images/admin_configuration/admin_register_user-4.png)
+![](images/admin_configuration/admin_register_user-4.png)
 By using this way of user creation, user cannot assign himself to any of the manager groups. So this procedure will be used mainly by the user which are not required to have manager privileges.
 But of course, admin user can assign manager privileges, for user that have register by themselves.
 
@@ -109,7 +110,7 @@ But of course, admin user can assign manager privileges, for user that have regi
 
 Scrolling down to the form there is a section called “Sharing list”.
 
-![Register User](images/admin_configuration/admin_register_user-5.png)
+![](images/admin_configuration/admin_register_user-5.png)
 
 The reason for having the sharing list it is quite simple. As we said, a normal user can only see/modify the samples/ analysis/ service request, etc that belong to him. So he is the responsible for the information included in iSkyLIMS.
 However, there are situations that this behavior needs to be changed because other people in their team needs to take over the activities, because of illness, vacations, etc. Sometimes because the unit organization has a person responsible for requesting an activity that is different from the person owner of data.

@@ -12,6 +12,6 @@ So for example on clinic module, you define “human” as the sample species, b
 For a better understanding we are going to specify them in the definition area that they are required.
 
 
-* [Massive Sequencing (Admin configuration)](adminConfiguration.md)
+[Massive Sequencing (Admin configuration)](adminConfiguration.md)
 
-* [Wetlab Manager Configuration](wetlabManagerConfiguration.md)
+[Wetlab Manager Configuration](wetlabManagerConfiguration.md)

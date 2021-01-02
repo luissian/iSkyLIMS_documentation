@@ -26,7 +26,7 @@ To get access to configuration option you must be logged as “admin” user. I 
 
 Click on the Configuration Samba on “CONFIGURATION” link to get the Samba settings form.
 
-![Samba configuration](../images/admin_configuration/samba_configuration_menu.png)
+![](../images/admin_configuration/samba_configuration_menu.png)
 
 When form is open you can see that there are 2 groups:
 *   Mandatory fields (the ones with red *)
