@@ -13,7 +13,7 @@ To have a fast way to check it we have created a dedicate option on the menu. Se
 It will automatically find the latest run recorded on iSkyLIMS and it present a page where you can see the status of the run as well as the rest of information available for the run.
 
 
-In the picture below the Run is in “Recorded” state, remember that in this state the Run, was just created either by using the steps described in wetlab Manager Configuration **Create New Run** or in chapter 3.6 (Legacy) **Create/Repeat New NextSeq Run**.
+In the picture below the Run is in “Recorded” state, remember that in this state the Run, was just created either by using the steps described in wetlab Manager Configuration **Create New Run** or **Create/Repeat New NextSeq Run**.
 
 ![](../images/wetlab_user_guide/wetlab_latest_run.png)
 
@@ -473,6 +473,28 @@ If there are more than one match then a list is displayed, to choose the right c
 
 Click on the collection index name to get full information.
 
-Check the chapter [Define the Collection Index kits](wetlabManagerConfiguration.html#Define-the-Collection-Index-kits) for detailed information.
+Check the chapter [Define the Collection Index kits](wetlabManagerConfiguration.html#define-the-collection-index-kits) for detailed information.
 
 ## Search by User Lot Kit
+
+Select “Search by User Lot Kit” inside SEARCH menu.
+
+![](../images/wetlab_user_guide/wetlab_search_user_lot_kits_form.png)
+
+*   **Lot Number**. Number of the Lot Kit
+*   **Commercial kit**. Name of the commercial kit
+*   **Protocol handled by User Kit**. Select a protocol from the list, which was defined for using a commercial kit
+*   **Platform User Kit**. Select a platform from the list, used for the commercial kit
+*   **End date to be expired**. List of the User Lot Kits than expired before the selected date.
+*   **Exclude Run Out**. Exclude from the search the User Lot Kits that are Run Out.
+
+Again you get 2 possible results, either a list of the User Lot Kits that match your request
+
+![](../images/wetlab_user_guide/wetlab_search_user_lot_kits_list.png)
+
+Or just the User Lot Kit infromation in case than only one result matches the condition request.
+
+### Display User Lot Kit Information
+
+
+![](../images/wetlab_user_guide/wetlab_display_user_lot_kits_1.png)
