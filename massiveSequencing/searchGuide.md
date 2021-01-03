@@ -349,6 +349,8 @@ In the previous chapter we tell you the way for searching runs and project, now 
 As you will see it is very similar as the previous search.  
 Select **Search by Sample** option from the SEARCH menu.
 
+![](../images/wetlab_user_guide/wetlab_search_sample_form.png)
+
 When searching a sample there are 2 type of samples that iSkyLIMS will search:
 *   Samples which were defined in [Massive Sequencing Investigator workflow](investigatorWorkflow.md)
 *   Sample names that are collecting from the sequencer output files
@@ -370,10 +372,9 @@ To differentiate the two types of samples we will name:
 *   **Samples**, which were defined in chapter "Massive Sequencing Investigator workflow"  
 *   **Run samples** the ones collecting from the sequencer output files
 
----
 
 Now you can get different results according to the matching results:
-*   Multiple matches in Samples and multiple matches on Run samples.
+*   **Multiple matches in Samples and multiple matches on Run samples.**
 
 ![](../images/wetlab_user_guide/wetlab_search_sample_list_1.png)
 
