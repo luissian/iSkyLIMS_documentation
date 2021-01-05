@@ -13,6 +13,7 @@ Application servers run web applications for bioinformatics analysis (GALAXY), t
 Contents
 --------
 
+
 * [Introduction](Introduction.md)
 * [Installation Instruction](Installation.md)
 * [Admin Global Configuration](AdminConfiguration.md)
@@ -35,6 +36,12 @@ Contents
 
 ---
 **Requesting Services**
+
+
+
+# Introduction
+# Installation Instruction
+# Admin Global Configuration
 
 
 

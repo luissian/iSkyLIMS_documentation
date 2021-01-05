@@ -215,6 +215,9 @@ The next table shows the summary of the Flowcell for the run
 
 ![](../images/wetlab_user_guide/wetlab_display_run_5.png)
 
+*   **Clusters**. The number of clusters for each tile (in millions).
+*   **Clusters (PF)**. The number of clusters passing filter for each tile (in millions).
+*   **Yield (MBases)**. The number of bases sequenced which passed filter.
 
 The next graphic shows the percentage of reads for each project and the reads that cannot been assigned to any of the projects.
 
@@ -230,6 +233,8 @@ If this percentage is small is fine, but it on the contrary is similar to the pr
 The table below split by lane for all project in the run
 
 ![](../images/wetlab_user_guide/wetlab_display_run_7.png)
+
+
 
 The reads that cannot be assigned to any sample, they are grouped and named "Unable to identify". In the bar graphic figure above you see the percentage, the following tables show the number of reads for Flowcell and lane summary.
 
@@ -277,16 +282,38 @@ When click on **Run Metrics** tab you can see the following table.
 
 When selecting the **Lane Metrics** tab, the run information split by lane is showed. Scroll horizontal to see all columns.
 
+*   **Yield Total**. The number of bases sequenced, which is updated as the run progresses.
+*   **Projected Yield**. The projected number of bases expected to be sequenced at the end of the run.
+*   **Aligned (%)**. The percentage of the sample that aligned to the PhiX genome, which is determined for each level or read independently.
+*   **Error Rate**. The calculated error rate of the reads that aligned to PhiX.
+*   **% Intensity Cycle 1**. The corresponding intensity statistic at cycle 1
+*   **%Q>=30**. The percentage of bases with a quality score of 30 or higher, respectively. This chart is generated after the 25 cycle, and the values represent the current cycle.
+
+
+
 ![](../images/wetlab_user_guide/wetlab_display_run_12.png)
+
+*   **Density(K/mm2)**. The density of clusters detected by image analysis (in thousands per mm2).
+*   **Clusters PF**. The percentage of clusters passing filtering, +/- one standard deviation.
+*   **% Phasing/Prephasing**. The value used by RTA for the percentage of molecules in a cluster for which sequencing falls behind (phasing) or jumps ahead (prephasing) the current cycle within a read, Read 1 and Read 2.
+*   **Reads**. The number of clusters (in millions).
+*   **%Q>=30**. The percentage of bases with a quality score of 30 or higher. This chart is generated after the 25th cycle, and the values represent the current cycle.
+*   **Yield**. The number of bases sequenced which passed filter.
+*   **Cycles Err Rated**. The number of cycles that have been error rated using PhiX, starting at cycle 1.
+*   **Aligned (%)**. The percentage of the sample that aligned to the PhiX genome, which is determined for each level or read independently.
+*   **Error Rate**. The calculated error rate, as determined by the PhiX alignment. Subsequent columns display the error rate for cycles 1–35, 1–75, and 1–100.
+*   **% Intensity Cycle 1**. The corresponding intensity statistic at cycle 1
 
 The last tab, Charts, show graphics to help you to check from a graphical way the quality of the run.  
 The graphics that are showed are:
-*   Data by lane
-*   Flow Cell Chart
-*   Data by Cycle
-*   QScore Heatmap
-*   QScore Distribution
-*   Indexing QC
+
+*   **Data by lane**. The Data by Lane pane shows plots that allow you to view quality metrics per lane.
+*   **Flow Cell Chart**. The Flow Cell Chart shows colour-coded quality metrics per tile for the entire flow cell,
+*   **Data by Cycle**. The Data by Cycle pane shows plots that allow you to follow the progression of quality metrics during a run.
+*   **QScore Heatmap**. The Q-score heat map shows plots that allow you to view the Q-score by cycle.
+*   **QScore Distribution**. The Q-score Distribution pane shows plots that allow you to view the number of reads by quality score. The quality score is cumulative for current cycle and previous cycles, and only reads that pass the quality filter are included. The quality scores are binned in groups: Q-score less than 20 in groups of 10, Q-scores 20–40 in groups of five, and one group of Q-scores above 40.
+
+*   **Indexing QC**.
 
 ![](../images/wetlab_user_guide/wetlab_display_run_13.png)
 
