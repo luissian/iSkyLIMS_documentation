@@ -40,7 +40,7 @@ Contents
 
 
 # Introduction
-# Installation Instruction
+# [Installation Instruction](Installation.md)
 # Admin Global Configuration
 
 
