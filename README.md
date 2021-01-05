@@ -12,27 +12,33 @@ Application servers run web applications for bioinformatics analysis (GALAXY), t
 
 Contents
 --------
+# Introduction
+# Installation Instruction
+# Admin Global Configuration
 
 
-* [Introduction](Introduction.md)
-* [Installation Instruction](Installation.md)
-* [Admin Global Configuration](AdminConfiguration.md)
+---
+
+
+# [Introduction](Introduction.md)
+# [Installation Instruction](Installation.md)
+# [Admin Global Configuration](AdminConfiguration.md)
 
 **Massive Sequencing Module**
 
-* [Massive Sequencing Admin Configuration](/massiveSequencing/massiveSequencing.md)
+# [Massive Sequencing Admin Configuration](/massiveSequencing/massiveSequencing.md)
 
 > **Wetlab Manager Activities**
 
-* [Wetlab Manager Configuration](massiveSequencing/wetlabManagerConfiguration.md)
-* [Massive Sequencing WetlabManager workflow](massiveSequencing/wetlabManagerWorkflow.md)
-* [Massive Sequencing Search](massiveSequencing/searchGuide.md)
-* [Massive Sequencing Statistics](massiveSequencing/statisticsGuide.md)
+# [Wetlab Manager Configuration](massiveSequencing/wetlabManagerConfiguration.md)
+# [Massive Sequencing WetlabManager workflow](massiveSequencing/wetlabManagerWorkflow.md)
+# [Massive Sequencing Search](massiveSequencing/searchGuide.md)
+# [Massive Sequencing Statistics](massiveSequencing/statisticsGuide.md)
 
 > **Investigator Activities**
 
-* [Investigator Configuration](massiveSequencing/investigatorConfiguration.md)
-* [Massive Sequencing Investigator workflow](massiveSequencing/investigatorWorkflow.md)
+# [Investigator Configuration](massiveSequencing/investigatorConfiguration.md)
+# [Massive Sequencing Investigator workflow](massiveSequencing/investigatorWorkflow.md)
 
 ---
 **Requesting Services**
