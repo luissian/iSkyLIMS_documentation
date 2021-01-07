@@ -29,7 +29,7 @@ So the first information that you get are the project that investigator was invo
 
 ### Display Investigator statistics
 
-In
+The first table when displaying Investigator statistics information are the samples that Investigator were responsible during the run preparation. When talking about "responsible" we mean that userid name was in the description column in the **sample sheet** file.
 
 ![](../images/wetlab_user_guide/wetlab_statistics_investigator_sample_table.png)
 
@@ -69,7 +69,7 @@ Then below the graphic with the numbers of runs created during this period.
 
 ![](../images/wetlab_user_guide/wetlab_statistics_period_runs.png)
 
-On the right side you can see a table with all the Runs. You can download this table in an excel format, and you can have information of the Run, by clicking on the run name. You will get the same information as described [Display Run information](searchGuid.html#Display-Run-information)
+On the right side you can see a table with all the Runs. You can download this table in an excel format, and you can have information of the Run, by clicking on the run name. You will get the same information as described [Display Run information](searchGuide.html#Display-Run-information)
 
 
 The next graphic shows you the disk utilization per Run. Remember that disk space was calculated while collecting data from the output files of the sequencer. The present disk utilization could be changed from the time data was collected, because of the strategy in your unit to reduce disk space on the storage container
@@ -80,7 +80,7 @@ The next graphic shows you the disk utilization per Run. Remember that disk spac
 On the first part of this page we have showed you statistics data for Runs, now we are going to display project information for this period of time.
 The first information now is the number of the projects, then the number of projects, and the lists of this projects.
 You can download the project list and you can see a specific project by clicking on the project name.
-The information that you will see on the project are the one described [Display Project information](searchGuid.html#Display-project-information)
+The information that you will see on the project are the one described [Display Project information](searchGuide.html#Display-project-information)
 
 ![](../images/wetlab_user_guide/wetlab_statistics_period_projects.png)
 

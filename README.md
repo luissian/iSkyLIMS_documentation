@@ -16,7 +16,7 @@ Application servers run web applications for bioinformatics analysis (GALAXY), t
 * [Installation Instruction](Installation.md)
 * [Admin Global Configuration](AdminConfiguration.md)
 
->  **Massive Sequencing Module**
+>  **Massive Sequencing Admin configuration**
 
 * [Massive Sequencing Admin Configuration](/massiveSequencing/massiveSequencing.md)
 
@@ -35,6 +35,9 @@ Application servers run web applications for bioinformatics analysis (GALAXY), t
 ---
 **Requesting Services**
 
+>  **Requesting Services Admin configuration**
+
+* [Requesting Services Admin Configuration](/requestingServices/adminConfiguration.md)
 
 
 

@@ -1,5 +1,5 @@
-Introduction
-============
+# Introduction
+
 
 The scope of this new functionally in iSkyLIMS is to provide a friendly way to track your samples from the time it is registered, continue tracking with the process/manipulation of the samples, attach the information provider by the sequencer, until the investigator receives the output information from the analysis done using bioinformatics tools.
 
