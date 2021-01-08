@@ -1,7 +1,13 @@
-# Massive Sequencing WetlabManager workflow
-
-test
-## test 1
+# WetlabManager workflow
 
 
-### test1.1
+1. Create Pool.
+2. Run Preparation.
+
+## Create new Pool
+
+
+## Create new Run
+
+
+## Create new NextSeq run

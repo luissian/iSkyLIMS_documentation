@@ -74,3 +74,10 @@ Defining the configuration email settings, you can decide, which user will recei
 ![Email configuration](../images/admin_configuration/email_configuration_form.png)
 
 It is recommended that box email is used to allow that several users could get the email and look into the problem.
+
+
+---
+# Crontab settings
+
+CRONJOBS = [
+('0 */2 0 * *', 'iSkyLIMS_wetlab.cron.looking_for_new_runs', '>>' + LOG_CRONTAB_FILE),
