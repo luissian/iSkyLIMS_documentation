@@ -7,7 +7,9 @@ These activities required for massive sequencing are separated in 3 main steps:
 2. Molecule extraction.
 3. Library preparation.
 
-The figure below shows the workflow activities from the time the new sample is recorded in iSkyLIMS until sample data are fetched from the sequencer output files.
+The figure below shows the workflow activities from the time the new sample is recorded in iSkyLIMS until sample is included in the sequencer.
+
+![](../images/wetlab_workflow/wetlab_sample_workflow2.png)
 
 
 ## Record new Sample
@@ -121,6 +123,26 @@ Select the samples that you are going to take over of and click on the submit bu
 ![](../images/wetlab_workflow/wetlab_molecule_new_samples_form.png)
 
 After submitting, you get a new page to assign the molecule protocol, as well as other information used for the extraction in an excel table format.
+
+![](../images/wetlab_workflow/wetlab_sample_add_molecule_information_form.png)
+
+*   **Molecule type**. Select if you are going to use DNA or RNA extraction from the original sample.
+*   **Type of Extraction**. Select Manual if the sample is pipetted, or Automated if a Robot is used.
+*   **Extraction date**. Set the date from the extracted molecule process starts.
+*   **Protocol to be used**. Select from the option list the protocol name that will be used for the extraction.
+
+Note that for helping the selection of "protocol to be used", it is linked to the value that you select on the molecule type field.  
+Then selecting for example DNA as type of molecule the option list that you can select are the ones that are defined to be used with DNA molecule.  
+If you select first an option from the “Protocol to be used” field you will get the full list, containing the protocols used for DNA as well as RNA.
+
+You can select now the one that you will use, however when selecting Molecule Type field, the value that you select on the protocol is reset. So it is recommended to select the molecule type first and then the protocol from the option list.  
+When you submit the information these samples, they will store in database and also they will assign to you as the owner. From now on, you (or the user in your friend list) are the only one that can set the parameter values.
+Keep in mind that at the time you get this page to include information, the samples have been not assign yet to you. Only when you click on the submit button they will.
+
+In “**My pending molecules**” tab is displayed the molecules that are assigned to you and they require to fill the information with the parameter values defined in the selected protocol.
+
+![](../images/wetlab_workflow/wetlab_my_pending_molecules_form.png)
+
 
 
 
