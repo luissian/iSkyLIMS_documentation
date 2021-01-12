@@ -263,11 +263,10 @@ In case that in your laboratory use other index, you can store your own collecti
 ![](../images/wetlab_configuration/collection_index_kit_form.png)
 
 
-```
-If you need to upload an Illumina collection kits, from a new IEM version, the
-files can be fetched, after the Illumina experiment manager (IEM) is installed,
-under folder “C:\Program Files (x86)\Illumina\Illumina Experiment Manager\IndexKits”.
-```
+> If you need to upload an Illumina collection kits, from a new IEM version, the
+> files can be fetched, after the Illumina experiment manager (IEM) is installed,
+> under folder “C:\Program Files (x86)\Illumina\Illumina Experiment Manager\IndexKits”.
+
 If you want to upload a customized or from other vendor, the upload file must be in the Illumina index kit format.
 
 Select the file and click on the Submit button to upload the file.
@@ -331,10 +330,74 @@ For them we have define this specific kit for "used on platforms".
 
 Click the submit button to save the information.
 
+### Additional kits for Library Preparation
+
+In the [Protocol Parameter definitions](#protocol-parameter-definitions) we left pending the configuration for the additional kits used for library preparation.
+
+We did not defined in that moment, because as you can see, you need to select the commercial used for each additional library preparation kit.
+
+To define the additional library preparation kits select "Create New Protocol" from the "PRELIMINARY PREPARATION", and scroll down until the "Protocols already defined for Library Preparations", and click on the "**Additional Lot Kit used in Protocol**".
+
+![](../images/wetlab_configuration/protocol_already_defined_additional_kit.png)
+
+Click on the "Define Additional Kits" bottom, to get the form for adding the information.
+
+![](../images/wetlab_configuration/additional_lib_prep_kits_form.png)
+
+*   **Given name**. Enter the name that will be displayed in the form for additional kits form.
+*   **Order**. Order that the additional kits are showed.
+*   **Commercial Kit Name**. Select from the list the commercial kit related to the kit. If the right commercial kit is not present in the list, go back to Commercial Kit definition and add it.
+*   **Description**. Write any value information
+
+Define all kits that could be used in your library preparations, even if some of them are mutually exclusive.  
+At the time that selecting the User Lot kit used, all these kits are optional and can left empty.
+
+Click on the submit bottom to save the changes.
+
 ### User Lot Commercial Kits
 
 We assigned the responsibility to fill the information about Lot kits to the investigator, because is the person who has more contact with the kits.  
 But in case that Wetlab Manager needs to add this information, we have included this option the me menu. Click on the link to know the parameters that you have to define in [Investigator Configuration](investigatorConfiguration.html#User-Lot-Kit-Configuration)
+
+## Define Sequencers
+
+In the laboratory, in some occasion, you get the good news that there is a new sequencer in the lab.  
+We have create a form to add the sequencer. Form that will be used during this first configuration of iSkyLIMS and later for adding a new sequencer.
+
+Select "Sequencer Configuration" from the "PRELIMINARY PREPARATION" menu and fill the information in the new sequencer creation form.
+
+![](../images/wetlab_configuration/new_sequencer_form.png)
+
+*   **Select Platform**. Select the right platform from the list.
+*   **Define Sequencer name** Write the name of the sequencer. It must be exactly the same as it is in the Instrument name field in the RunParameters.xml.
+*   **Number of lanes** Write the number of lanes that the sequencer handles.
+*   **Sequencer location**. Write the location of the sequencer.
+*   **Serial number** Write the Serial number of the sequencer or the inventory number given on your organization.
+*   **Sequencer Start in Service**. Select the date from where the Sequencer is on service.
+*   **Description**. Write a short description about the sequencer.
+
+Click on the submit bottom when all data is filled. You will get a confirmation window if the sequencer is updated or a error message if the Sequencer name was already in database.
+
+Scrolling down you will see "Sequencers" tabs, where you can see all the sequencers defined.
+
+![](../images/wetlab_configuration/sequencer_already_defined.png)
+
+## Sequencer Platform Configuration
+
+Finally the last configuration from WetLab Manager is to define the set of configuration that each sequencer can have.
+
+Select "Sequencer Configuration" from the "PRELIMINARY PREPARATION" menu and fill the information in the new sequencer configuration form.
+
+![](../images/wetlab_configuration/sequencer_configurations_form.png)
+
+*   **Select Sequencing Platform**. Select one platform from the list. You can get in the list, only the platforms which have a sequencer, that you defined in the previous step.
+*   **Define new Sequencer configuration**. Write the configuration name.
+
+Click on the submit bottom when all data is filled. You will get a confirmation window if the sequencer configuration is updated or a error message if the sequencer configuration was already in database.
+
+Scrolling down you will see "Sequencers" tabs, where you can see all the sequencer configurations defined.
+
+![](../images/wetlab_configuration/sequencer_configurations_defined.png)
 
 ## Summary
 
@@ -356,3 +419,5 @@ We have created this chapter to summarize the configuration steps.
         *   RNA extraction
         *   Library Preparation
         *   Protocol
+*  Define Sequencers
+*  Define Sequencer Platform Configuration

@@ -14,7 +14,7 @@ The figure below shows the workflow activities from the time the new sample is r
 
 ## Record new Sample
 
-At this point, we assume that the requirements defined on, [WetlabManager workflow](massiveSequencing/wetlabManagerWorkflow.md) are defined.
+At this point, we assume that the requirements defined on, [WetlabManager workflow](wetlabManagerWorkflow.md) are defined.
 
 To record a new sample (or a set of them) select “Record Samples” from the RUN PREPARATION menu.  
 
@@ -38,18 +38,18 @@ The sample name cannot be repeated, in order to avoid add information to a wrong
 It is very common that some case samples need to be processed again, because of many reason. For these ones you do not need to define the sample, because it is already defined, but you have to specify which step need to be reprocessed.  
 Sometimes for reprocessing again the sample, you need to require another/more sample for the patient. In this case you have to considered a new sample, which will have of course a new sample name. You can join these sample because they are assigned to the same patient.
 
-**Sample Origin**. You will select from the option list the place from where the sample comes from, like the hospital name, organization name, laboratory name, etc. You only get the option from the ones that were defined in [WetlabManager configuration](massiveSequencing/wetlabManagerConfiguration.html#Sample-origin) Sample origin.
+**Sample Origin**. You will select from the option list the place from where the sample comes from, like the hospital name, organization name, laboratory name, etc. You only get the option from the ones that were defined in [WetlabManager configuration](wetlabManagerConfiguration.html#Samples-origin) Sample origin.
 
-**Type of sample**. You select from the option list the type of sample that sample belongs to. The type of sample were defined [WetlabManager workflow](massiveSequencing/wetlabManagerWorkflow.md).
+**Type of sample**. You select from the option list the type of sample that sample belongs to. The type of sample were defined [WetlabManager workflow](wetlabManagerWorkflow.md).
 
-**Species**. Select for the option list the specie of the sample. Species list were defined in [WetlabManager configuration](massiveSequencing/wetlabManagerConfiguration.html#Species-definition) Species.
+**Species**. Select for the option list the specie of the sample. Species list were defined in [WetlabManager configuration](wetlabManagerConfiguration.html#Species-definition) Species.
 
-**Project/Service**. We have defined these 8 fields, which in most of the situations are not enough. To customized with the additional information that you need to set for each example iSkyLIMS allows you to defined your own fields. To select them you need to select from the option list the one that fit you. Remember that these projects were defined in [WetlabManager configuration](massiveSequencing/wetlabManagerConfiguration.html#Define-sample-project) sample Project.
+**Project/Service**. We have defined these 8 fields, which in most of the situations are not enough. To customized with the additional information that you need to set for each example iSkyLIMS allows you to defined your own fields. To select them you need to select from the option list the one that fit you. Remember that these projects were defined in [WetlabManager configuration](wetlabManagerConfiguration.html#Define-sample-project) sample Project.
 
 **Date sample extraction**. Date were the sample was extracted from the patient. Do not set the date that you recorded in iSkyLIMS. Select the date from the calendar window.
 
 **Sample Storage Location**. Besides to record de sample is important to track where the sample has been storage. This is a free text that you can write anything that helps to identify where the sample is located.
-For each sample, all fields must be filled in, unless they were set as optional when defining the type of sample in [WetlabManager configuration](massiveSequencing/wetlabManagerConfiguration.html#Samples-origin) Samples Origin.
+For each sample, all fields must be filled in, unless they were set as optional when defining the type of sample in [WetlabManager configuration](wetlabManagerConfiguration.html#Samples-origin) Samples Origin.
 
 
 After submit the form, iSkyLIMS returns you back to this page in case that some mandatory information was missing.
@@ -65,7 +65,7 @@ For the first scenario, where you need to set more data to the sample, a new for
 ![](../images/wetlab_workflow/wetlab_additional_info_new_sample_form.png)
 
 
-Note that the fields that you see in the picture above, on the next column to Sample Name, are only for writing this document. The column names that you will get are the additional parameters that were defined at the time to Define a new Sample Project in [WetlabManager configuration](massiveSequencing/wetlabManagerConfiguration.html#Define-sample-project).
+Note that the fields that you see in the picture above, on the next column to Sample Name, are only for writing this document. The column names that you will get are the additional parameters that were defined at the time to Define a new Sample Project in [WetlabManager configuration](wetlabManagerConfiguration.html#Define-sample-project).
 
 When setting information to the sample you can have 3 types of choices, according as the type of field was defining during the sample project creation.   
 The field when you click on it you can have:
@@ -93,10 +93,12 @@ You will get the form to fill in, same form as described above, and when it was 
 
 The next step after the sample is defined in iSkyLIMS is the process for **DNA/RNA extraction**.  
 
-During this process the people in the laboratory will use specific commercial kits to extract the DNA/RNA.  
-These kits, as we described in  [WetlabManager configuration](massiveSequencing/wetlabManagerConfiguration.html#Define-commercial-kits) define Commercial kits for molecule extraction, the user with wetlab manager rights needs to define the commercial kits that are used in the lab for the DNA/RNA extraction.
+Select Handling Molecules” from the RUN PREPARATION menu.  
 
-Then using these kits as input the investigator has to define his/her own lot kit, as described in  [Investigator  configuration](massiveSequencing/investigatorConfiguration.html#User-lot-kit-configuration).Define User Lot Commercial Kit.  
+During this process the people in the laboratory will use specific commercial kits to extract the DNA/RNA.  
+These kits, as we described in  [WetlabManager configuration](wetlabManagerConfiguration.html#define-commercial-kits) define Commercial kits for molecule extraction, the user with wetlab manager rights needs to define the commercial kits that are used in the lab for the DNA/RNA extraction.
+
+Then using these kits as input the investigator has to define his/her own lot kit, as described in  [Investigator  configuration](investigatorConfiguration.html#User-lot-kit-configuration).Define User Lot Commercial Kit.  
 Before starting the molecule extraction definition in iSkyLIMS, check that the protocol you want to use for this extraction is available form the select list. See chapter  [WetlabManager configuration](massiveSequencing/wetlabManagerConfiguration.html#Protocol-and-parameter-definitions) Protocol and Parameter definitions.
 
 To handle the extraction molecule process in iSkyLIMS select “Handling Molecules” from the RUN PREPARATION menu.
@@ -108,6 +110,8 @@ In the new window you can see 3 tabs that you can select:
 *   My pending molecules
 *   Molecules use specification
 
+### New Samples
+
 The first time you access to this panel you only have data in the “**New Samples**” tab, because the tab “**My pending molecules**” only shows the molecules that are you started to work with.
 
 On **New Samples** you will see the samples that have been already define which need to start the extraction of DNA/RNA.
@@ -116,7 +120,7 @@ The sample field has the sample name, where you identify the sample that you nee
 
 **Sample Code ID** field can help you to select the samples that have been created by a user, in that way you can easily filter the ones that you need to work with.
 
-To get more information of how Sample Code ID is built check the  [Understanding Code ID](massiveSequencing/understandingCodeID.md) in each step.
+To get more information of how Sample Code ID is built check the  [Understanding Code ID](understandingCodeID.md) in each step.
 
 Select the samples that you are going to take over of and click on the submit button.
 
@@ -139,11 +143,145 @@ You can select now the one that you will use, however when selecting Molecule Ty
 When you submit the information these samples, they will store in database and also they will assign to you as the owner. From now on, you (or the user in your friend list) are the only one that can set the parameter values.
 Keep in mind that at the time you get this page to include information, the samples have been not assign yet to you. Only when you click on the submit button they will.
 
+### My pending molecules
+
 In “**My pending molecules**” tab is displayed the molecules that are assigned to you and they require to fill the information with the parameter values defined in the selected protocol.
 
 ![](../images/wetlab_workflow/wetlab_my_pending_molecules_form.png)
 
+Check on the “Select Molecule” checkbox for the samples that you want to add the parameter information, and then click on the submit button.
 
+To get more information of how Molecule Code ID is built check the chapter [Understanding the code ID](understandingCodeID.html#Molecule-codeID) Molecule CodeID.
 
+For the selected samples you gets a new page where you need to write the parameter values that you get during the extraction process in the lab.
+
+![](../images/wetlab_workflow/wetlab_add_molecule_quality_parameters_form.png)
+
+For each sample you have to select the Lot kit that you use for the extraction.
+
+The option values that you get are the “Lot barcode” that you write at the time that you define the lot kit [Investigator Configuration](investigatorConfiguration.html#User-lot-kit-configuration) User Lot Commercial Kit.
+
+>Note that “lot kit” with expired date are showed in the available list. Only the "User Lot Kits" which manually are set as "Run Out" are not displayed.
+
+It is not allow to save these parameters if the lot commercial kit is not set in the form. To advice to user that he is running out of the Lot kits, because either they are not defined yet or all lot kits have reached the expired date, this scenario a warning message is displayed to correct this situation.
+
+After submit the successful information a confirmation page is displayed.
+
+### Molecules use specification
+
+Once the parameter values for the extraction molecules are defined the next step is to select the use that this molecule will have.
+
+Then click on the “Molecules use specification” tab to know the samples that are pending for defining the use.
+
+![](../images/wetlab_workflow/wetlab_molecule_use_specification_form.png)
+
+**Molecule use for**. Select from the option list the use of each sample. The option values that you get are the ones that were defined in [](wetlabManagerConfiguration.html#Molecule-use-definition) Molecule use definition.
+
+On this step the sample can follow 2 different process according to the use.
+1. No massive sequencing is required
+2. Requires massive sequencing
+
+For the first case, when you are using the extracted DNA sample for non massive sequencing, like per example for PCR. The sample will not be present in the available sample to add the information related to massive sequencing preparations.
+
+On the second case the sample will continue with the process described in the next chapter.
 
 ## Handling Library Preparation
+
+Select Handling Library Preparation from the RUN PREPARATION menu.
+
+For handling the  library preparation process we have divided in 4 steps:
+*   Available Samples
+*   Pending Protocol Parameters
+*   Pending additional Kits
+*   Index assignment
+
+
+![](../images/wetlab_workflow/wetlab_library_preparation_tabs.png)
+
+### Available Samples
+
+When click on the "Available Samples" tabs you will see the samples that in the last step, for molecule extraction preparation, we assigned that the sample will continue using massive Sequencing.
+
+![](../images/wetlab_workflow/wetlab_lib_prep_available_samples_form.png)
+
+In this form you need to select one of the library preparation protocol that wetlab manager defined at [WetlabManager Configuration](wetlabManagerConfiguration.html#Protocol-and-parameters-definitions) Protocol and Parameters definitions
+
+Select the library preparation protocol for each sample and submit the form
+
+### Pending Protocol Parameters
+
+When you submit the "Available Samples form" you get a new form to set the parameters defined for the selected protocol.  
+
+> The columns names that you will get after the "library Preparation Code ID" will be different. Remember that the names that you see in the figure are for the purpose of writing this document.
+
+
+![](../images/wetlab_workflow/wetlab_lib_prep_prot_param_form.png)
+
+After submit you will get a confirmation page that information was updated. Click on the "Return Library Preparation" bottom to add information for the additional kits, or for handling another set of samples.
+
+### Pending additional Kits
+
+Sometimes that instead of using a unique kit for your library preparation, you need  to use several kits.
+For that reason we have included this option inside iSkyLIMS.
+
+There are 2 steps for adding these kits.
+*   Select the samples to add the kits
+
+![](../images/wetlab_workflow/wetlab_lib_prep_additional_kits_form1.png)
+
+> In this form the samples are grouped by protocol.
+>
+> It means that you will have 2 forms if the list of samples, which require to add the additional kits, belongs to 2 different library preparation protocols
+
+*   Select the lot kit used for the library preparation
+
+![](../images/wetlab_workflow/wetlab_lib_prep_additional_kits_form2.png)
+
+> Remember that the additional kits were defined on  [WetlabManager Configuration](wetlabManagerConfiguration.html#additional-kits-for-library-preparation) Additional kits for Library Preparation
+
+All these fields are optional and left empty if the additional kits was not used for the library preparation.
+
+Click on the submit bottom to save your changes.
+
+### Index assignment
+
+The last step. in iSkyLIMS, for adding the library preparation information is to include the index adapters used for each sample.
+
+Before moving to this form, you need to create in advance the “sample sheet” file using the Illumina Experiment Manage (IEM).
+
+> Please note that use of this tool is out of the scope of this user guide, we have created some examples (one for NextSeq and one for miSeq illumina sequencer), but if you need more information to know how to use the software you should contact with Illumina or their big community, for support.
+
+The following table is an example for sample sheet file to describe the mandatory fields that must be in the file.
+
+|Sample ID | Sample Name  | Sample_Plate  |Sample_Well | index  | I7_Index_ID | Sample_Project | Description |
+|---|---|---|---|---|---|---|---|
+| SAM_AA_290  |  SAM_AA_290 | Plate  | A01  |AR002   |CGATGT | Project name  | User ID  |
+
+When creating the Sample Sheet using the Illumina Experiment Manager (IEM) software is important to define:
+
+*  Sample Project
+*  Description
+
+**Sample Project**. You can write any name, and assign different samples to the same project, and of course have several project names in the file.
+
+The name of the project has no any relation with the "sample project" that we mention at [Recording additional sample information](#recording-additional-sample-information). You can name with the same name, because they are handled in complete different way inside iSkyLIMS.
+
+To handle different organization requirements, it is possible to repeat the project name in different runs. To unable this option you have to set this "ON".
+
+**Description**. This field **must have the userid** of the responsible of the library preparation sample. The importance of this field is that we are going to link the sample with the user, to perform the user statistics.
+
+If the sample has no userid or it is an invalid value, the sample sheet file will be reject.
+
+Once you have the Sample Sheet file ready and it fully complies with the above requirements, you can upload it, using the "Browse bottom" that is in **Index assignment** tab.
+
+![](../images/wetlab_workflow/wetlab_lib_prep_index_assignment_form.png)
+
+**Select Sequencer Platform**. click the on bottom for the sequencer platform used for the run
+
+**Select Configuration**. Select from the list of the available configuration.
+
+The list of the sequencer configuration was described on  [WetlabManager Configuration](wetlabManagerConfiguration.html#sequencer-platform-configuration) Sequencer Platform Configuration. 
+
+
+Once you have filled the sample sheet file you need to upload to iSkyLIMS.
+The process is quite simple. Select “**Handling Library Preparation**” from the RUN PREPARATION menu.
