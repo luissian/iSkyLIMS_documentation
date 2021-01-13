@@ -254,10 +254,16 @@ Before moving to this form, you need to create in advance the “sample sheet”
 The following table is an example for sample sheet file to describe the mandatory fields that must be in the file.
 
 |Sample ID | Sample Name  | Sample_Plate  |Sample_Well | index  | I7_Index_ID | Sample_Project | Description |
-|---|---|---|---|---|---|---|---|
+|----------|--------------|---------------|------------|------|------|------|------|
 | SAM_AA_290  |  SAM_AA_290 | Plate  | A01  |AR002   |CGATGT | Project name  | User ID  |
 
 When creating the Sample Sheet using the Illumina Experiment Manager (IEM) software is important to define:
+
+| Syntax | Description |
+| --- | ----------- |
+| Header | Title |
+| Paragraph | Text |
+
 
 *  Sample Project
 *  Description
@@ -280,7 +286,7 @@ Once you have the Sample Sheet file ready and it fully complies with the above r
 
 **Select Configuration**. Select from the list of the available configuration.
 
-The list of the sequencer configuration was described on  [WetlabManager Configuration](wetlabManagerConfiguration.html#sequencer-platform-configuration) Sequencer Platform Configuration. 
+The list of the sequencer configuration was described on  [WetlabManager Configuration](wetlabManagerConfiguration.html#sequencer-platform-configuration) Sequencer Platform Configuration.
 
 
 Once you have filled the sample sheet file you need to upload to iSkyLIMS.
