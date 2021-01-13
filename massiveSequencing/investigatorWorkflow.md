@@ -259,11 +259,6 @@ The following table is an example for sample sheet file to describe the mandator
 
 When creating the Sample Sheet using the Illumina Experiment Manager (IEM) software is important to define:
 
-| Syntax | Description |
-| --- | ----------- |
-| Header | Title |
-| Paragraph | Text |
-
 
 *  Sample Project
 *  Description
