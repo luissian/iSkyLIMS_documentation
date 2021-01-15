@@ -271,7 +271,7 @@ To handle different organization requirements, it is possible to repeat the proj
 
 **Description**. This field **must have the userid** of the responsible of the library preparation sample. The importance of this field is that we are going to link the sample with the user, to perform the user statistics.
 
-If the sample has no userid or it is an invalid value, the sample sheet file will be reject.
+If the sample has no userid or it is an invalid value, the sample sheet file will be rejected.
 
 Once you have the Sample Sheet file ready and it fully complies with the above requirements, you can upload it, using the "Browse bottom" that is in **Index assignment** tab.
 
@@ -283,6 +283,18 @@ Once you have the Sample Sheet file ready and it fully complies with the above r
 
 The list of the sequencer configuration was described on  [WetlabManager Configuration](wetlabManagerConfiguration.html#sequencer-platform-configuration) Sequencer Platform Configuration.
 
+When submitting the Sample Sheet file you get information overview.  
+On the top left side, you can see the heading information that was in the Sample Sheet.  
+On the right  side you get a summary information, with the number of samples, Project names, and the users IDs.  
+On the button you get the sample information.
 
-Once you have filled the sample sheet file you need to upload to iSkyLIMS.
-The process is quite simple. Select “**Handling Library Preparation**” from the RUN PREPARATION menu.
+Check that all information is ok, and check that all samples are included.  
+
+The samples which were not defined with the previous information will be discarded.
+
+![](../images/wetlab_workflow/wetlab_lib_prep_index_confirmation_form.png)
+
+**Verify that userID** is set for each sample on "Decription" column, and it is assigned to the right user. If case that there is not userID or you want to assign to different user, select the right one from the selection list.
+
+After submit the button you will get the confirmation that the information was successful recorded.
+ 
