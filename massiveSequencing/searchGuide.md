@@ -121,9 +121,12 @@ In the search run window there is one form on the left side and on the right sid
 The fields in the search are optional, which means that you do not need to fill all data for each one. Neither you need to write the full name of the run, you can type part of the run name, and you will get the runs that match with your query.
 
 The input fields to make your query are:
-Run Name. Enter the run name that you want to get. There is no limitation for the minimum length of characters that you can type on this field. You can type just only one letter or the full name of the run, but keep in mind that entering few characters in this field you will get many matches.
-Platform.  
-Choose one of the platform option in the select form. By default, the following platform were defined on iSkyLIMS during the installation:
+
+*   **Run Name**. Enter the run name that you want to get.
+
+There is no limitation for the minimum length of characters that you can type on this field. You can type just only one letter or the full name of the run, but keep in mind that entering few characters in this field you will get many matches.
+*   **Platform**. Choose one of the platform option in the select form. By default, the following platform were defined on iSkyLIMS during the installation:
+
 *   Illumina: Mini-Seq
 *   Illumina: Mi-Seq
 *   Illumina:  Next-Seq
@@ -137,9 +140,9 @@ Choose one of the platform option in the select form. By default, the following 
 
 ![](../images/wetlab_user_guide/wetlab_search_run_form.png)
 
-Run state. Select one of the state that could have a Run.
-*   From Start Date. Select the date from where you can to start your search.  When you click on this field select the date using the calendar window that the navigator shows to you.
-*   End Date Search. Select the last date that a run was created.
+*   **Run state**. Select one of the state that could have a Run.
+*   **From Start Date**. Select the date from where you can to start your search.  When you click on this field select the date using the calendar window that the navigator shows to you.
+*   **End Date Search**. Select the last date that a run was created.
 
 If you do not type any date on the “End Date Search”, means that you get the run created after this day until today.
 
@@ -332,12 +335,11 @@ You will get a new form to indicate the values that you want to include for sear
 
 ![](../images/wetlab_user_guide/wetlab_search_project_form.png)
 
-**Project Name**. Enter the project name that you want to get. There is no limitation for the minimum length of characters that you can type on this field  
-**Sequencer Machine**. Choose one of the Sequencer option in the select form.
-
-**Run state**. Projects dates are always related to the run dates, for that reason we mention about the run dates and not to projects dates.
-*   From Start Date. Select the date from where you can to start your search.  When you click on this field select the date using the calendar window that the navigator shows to you.
-*   End Date. Select the last date that a project was created.
+*   **Project Name**. Enter the project name that you want to get. There is no limitation for the minimum length of characters that you can type on this field.  
+*   **Sequencer Machine**. Choose one of the Sequencer option in the select form.
+*   **Run state**. Projects dates are always related to the run dates, for that reason we mention about the run dates and not to projects dates.
+*   **From Start Date**. Select the date from where you can to start your search.  When you click on this field select the date using the calendar window that the navigator shows to you.
+*   **End Date**. Select the last date that a project was created.
 
 If you do not type any date on the “End Date”, means that you get the project created after this day until today.  
 If you select only the “End Date Search” you get all projects created before this date.   
