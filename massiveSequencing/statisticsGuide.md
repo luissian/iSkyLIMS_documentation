@@ -33,16 +33,14 @@ The first table when displaying Investigator statistics information are the samp
 
 ![](../images/wetlab_user_guide/wetlab_statistics_investigator_sample_table.png)
 
-
-*   Project Name.
-*   Date. It is the date from where the project starts in the sequencer as part of a run.
-*    Library Kit. It is the library kit defined in the sample sheet. It is important to mention that this time we are talking about the sample sheet used to load in the sequencer.
 *   Samples. Number of the samples in the project.
+*   Project Name.
+*   Run Name.
+*   Date. It is the date from where the project starts in the sequencer as part of a run.
 *   Cluster PF
 *   Yield Mb
 *    % Q >30
-
-
+*   Mean
 
 The meaning of these values were described on [Search by Run](searchGuide.md)
 

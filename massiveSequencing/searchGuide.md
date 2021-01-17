@@ -54,15 +54,18 @@ When you reach this page you can see on top that there are 2 windows.
 
 ![](../images/wetlab_user_guide/wetlab_incomplete_run_1.png)
 
-On the left side you can see all Runs that are in Recorded state. Remember that the run in this state means that the run was created on iSkyLIMS, but the sequencer has not yet crated the directory on the shared folder.  
-The information that is presented is:
+On the left side you can see all Runs that are in Recorded state. Remember that the run in this state means that the run was created on iSkyLIMS, but the sequencer has not yet created the directory, on the shared folder.
+
+The fields shown are:
 *   Run Name
 *   Recorded date
 *   Number of days in recorded
 
 Check this last column **Number of days in recorded** to identify if there was a problem with the run in the sequencer.
-On the right side there is a graphic where you can see the percentage for each of these groups.  
-If you want to get more information of the run, you can click on the run name. you will redirected to display run page.
+On the right side there is a graphic where you can see the percentage for each of these groups.
+
+If you want to get more information of the run, click on the run name, and you will redirected to display run page.
+
 Scrolling down the page you can see which runs are in Error and which ones have been cancelled.   
 These windows are only show in case there are runs on theses state, if they are not presented means that you do not have run with errors or cancelled runs.
 

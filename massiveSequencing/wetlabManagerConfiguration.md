@@ -357,7 +357,9 @@ Click on the submit bottom to save the changes.
 ### User Lot Commercial Kits
 
 We assigned the responsibility to fill the information about Lot kits to the investigator, because is the person who has more contact with the kits.  
-But in case that Wetlab Manager needs to add this information, we have included this option the me menu. Click on the link to know the parameters that you have to define in [Investigator Configuration](investigatorConfiguration.html#User-Lot-Kit-Configuration)
+But in case that Wetlab Manager needs to add this information, we have included this option the menu.
+
+Click on the link to know the parameters that you have to define in [Investigator Configuration](investigatorConfiguration.html#User-Lot-Kit-Configuration)
 
 ## Define Sequencers
 
