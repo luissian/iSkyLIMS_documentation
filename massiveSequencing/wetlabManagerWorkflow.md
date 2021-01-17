@@ -36,8 +36,19 @@ For **Pool Code** and **Library Code** values check the [Understanding Code ID](
 
 ## Create new Run
 
+To create a new run select the "Create New Run" option from the RUN PREPARATION menu.
+
+As it happened when we create a new Pool, there are tabs that groups the pools based on the sequencers. So  as you can see on the figure below there is one tab for the pools that was prepared for MiSeq sequencer. You will tabs for every Pool that was prepared for using different sequencer.
 
 ![](../images/wetlab_workflow/wetlab_run_creation_from_pool_form.png)
 
+*   **Define the Experiment for the Run** write the name that you are going to give for the run. You cannot repeat the run name, **Run name must be unique**. A error message is returned if the run name is already defined.
+*   **Lote Reagent Kit Box1/Box2** These are optional fields to indicate the reagent kits, Although they are not needed for the run, we strongly recommend you include this information to have full traceability, because it is mandatory for certifications.
+
+![](../images/wetlab_workflow/wetlab_run_creation_form2.png)
+
+When you select the pools to include in the run , you will get a page similar to the sample sheet. Modify any wrong information and before submit the form, check that every sample have in the description field the user id of the responsible and the projects names are right.
+
+You get a confirmation that the run was created and you can download the Sample Sheet file.
 
 ## Repeat/Create new NextSeq run
