@@ -267,7 +267,7 @@ When creating the Sample Sheet using the Illumina Experiment Manager (IEM) softw
 
 The name of the project has no any relation with the "sample project" that we mention at [Recording additional sample information](#recording-additional-sample-information). You can name with the same name, because they are handled in complete different way inside iSkyLIMS.
 
-To handle different organization requirements, it is possible to repeat the project name in different runs. To unable this option you have to set this "ON".
+To handle different organization requirements, it is possible to repeat the same project name in different runs. To allow this option you have to set the parameter PROJECTS_ALLOWED_IN_MULTIPLE_RUNS to "TRUE".
 
 **Description**. This field **must have the userid** of the responsible of the library preparation sample. The importance of this field is that we are going to link the sample with the user, to perform the user statistics.
 
@@ -297,4 +297,3 @@ The samples which were not defined with the previous information will be discard
 **Verify that userID** is set for each sample on "Decription" column, and it is assigned to the right user. If case that there is not userID or you want to assign to different user, select the right one from the selection list.
 
 After submit the button you will get the confirmation that the information was successful recorded.
- 

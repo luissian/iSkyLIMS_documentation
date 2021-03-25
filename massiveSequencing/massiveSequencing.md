@@ -1,4 +1,4 @@
-# Massive Sequencing Configuration
+# Massive Sequencing Steps Configuration
 
 To provide the flexibility, that we want to give to the "Massive Sequencing" module, is necessary to define fields, and many others parameters in order that you can have right parameters that you need to use.
 
@@ -12,8 +12,7 @@ Having this on mind we have split the configuration in 3 type of users:
 *   **Wetlab Manager** to fill all  information related to the samples
 *   **Investigator** for adding the kit lot numbers used during the sample preparations
 
-[Massive Sequencing (Admin configuration)](adminConfiguration.md)
-
+[Wetlab Admin configuration](adminConfiguration.md)
 
 [Wetlab Manager Configuration](wetlabManagerConfiguration.md)
 

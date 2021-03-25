@@ -17,7 +17,7 @@ This section will show you how to define the initial data that Massive Sequencin
 During the installation already some data are loaded in database, but if you need to add extra information follow the instructions bellow.  
 There are 4 type of information that you need to define in the  **initial settings**
 *   Species
-*   Sample Origin
+*   Laboratory Request
 *   Molecule type
 *   Protocol type
 
@@ -34,28 +34,40 @@ Write the specie name and click on the Submit button.
 
 As you can see on the right side "human" and "mouse" species are already defined. This was done during the installation.
 
-### Samples Origin
-Define the location from the sample could came from, by clicking on the "Sample Origin" Tab.
+### Laboratory Request
+Define the location (Laboratory/Organization/Institution) from the sample could came from, by clicking on the "Sample Origin" Tab.
 
-![](../images/wetlab_configuration/samples_origin_form.png)
+![](../images/wetlab_configuration/laboratory_request_form.png)
 
-There are 3 fields that you need to fill in:
-*   New Origin
-*   Origin coding name
-*   Location data
+There are several fields that you need to fill in:
+*   Define new Laboratory/Organization
+*   Define Laboratory/organization coding name
+*   Department Unit
+*   Contact Name
+*   Contact Phone
+*   Email contact
+*   Address
 
-**New Origin** is the organization/hospital name who sends the sample to your organization.
 
-**Coding name** is any short name that can identify the origin of the sample.
+**Define new Laboratory/Organization** is the Laboratory/Organization/hospital name from where you receive the samples.
 
-**Location data** is the country/Area which he origin is located.
+**Define Laboratory/organization coding name** It is the short code name that you will see later on when defining new sample in the "Lab request" column.
 
-For example if you receives samples from the Metropolitan Hospital at New York. You could define the samples origin fields like this:
-*   New Origin. **Metropolitan Hospital**
-*   Origin coding name. **Metropolitan**
-*   Location data. **New York**
+**Department Unit** Department or unit where the sample is collected to send to you
 
-On the right side you will see the Samples Origin that have been defined so far.
+**Contact Name** Contact name of the person to contact in case of any issue with the samples
+
+**Contact Phone** Phone number of the contact person
+
+**Email contact** The email of the contact person
+
+**Address** The Laboratory/Organization address
+
+
+Bellow the Laboratory Request form you can see the the laboratories/Institutions that are defined so far. The figure display as an example the definition of the Laboratory.
+
+![](../images/wetlab_configuration/laboratory_request_defined.png)
+
 ### Molecule Type
 During the installation 2 Molecule types were defined.
 *   DNA

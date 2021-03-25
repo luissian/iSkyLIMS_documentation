@@ -120,10 +120,8 @@ To solve this situation, the sharing list utility is created.  Each user can sel
 
 Then in the previous scenario, when the owner sample user adds, in their shared list, the name of the responsible for requesting a service, these samples will be displayed, for selecting in the form to create the service request.
 
-
-## [Massive Sequencing Admin Configuration](massiveSequencing/adminConfiguration.md)
+## [Massive Sequencing Steps Configuration](massiveSequencing/massiveSequencing.md)
 Click on the link above to continue the configuration on massive sequencing
 
-
-## [Admin configuration in Requesting services](massiveSequencing/adminConfiguration.md)
-Click on the link above to continue the configuration on massive sequencing
+## [Requesting services Configuration](requestingServices/requestingServices.md)
+Click on the link above to continue the configuration on requesting Services
