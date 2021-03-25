@@ -415,10 +415,14 @@ Scrolling down you will see "Sequencers" tabs, where you can see all the sequenc
 
 ## Summary
 
-As you see, there is quite a lot initial configuration that Wetlab Manager has to define to customize iSkyLIMS to their requirements.
+As you see, there is quite a lot required configuration that Wetlab Manager has to define to customize iSkyLIMS to their requirements.
 
-We have created this chapter to summarize the configuration steps.
+The steps performed in this chapter were:
 *  Define the Initial Settings
+    *   Species definition
+    *   Laboratory Request
+    *   Molecule Type
+    *   Protocol Type
 *  Define Protocols.
     *   For RNA Extraction
     *   For DNA Extraction
