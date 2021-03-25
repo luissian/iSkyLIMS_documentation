@@ -1,6 +1,5 @@
 # Wetlab Admin configuration
 
-
 When selecting the available options in the user forms, these values require that they are created in advance, to allow them to be selected. These forms are available only If the logged user has manager permission.
 
 Be aware, that the pre-requisites we are going to describe in this chapter are applicable for at least 2 of the 3 iSkyLIMS modules, and in order do not repeat again they are described only once. But keep in mind that using more than one module you need to repeat them in each module. The reason for that behaviour is to get only the option values that are applicable for your needs in each of the module application.
