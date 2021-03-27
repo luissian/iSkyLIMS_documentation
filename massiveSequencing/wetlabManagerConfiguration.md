@@ -11,10 +11,13 @@ There are 4 main groups for configuration:
 *   Molecule uses
 *   Commercial Kits used in the laboratory
 
+The figure shows an overview of the configuration that wetlab manager has to do before starting the investigator recording new samples.
+![](../images/wetlab_configuration/wetlab_manager_configuration_diagram.png)
+
 
 ## Initial settings
 This section will show you how to define the initial data that Massive Sequencing module needs as base from where the rest of information is referenced to.  
-During the installation already some data are loaded in database, but if you need to add extra information follow the instructions bellow.  
+During the installation some data were loaded in database, but if you need to add extra information follow the instructions bellow.
 There are 4 type of information that you need to define in the  **initial settings**
 *   Species
 *   Laboratory Request
@@ -83,6 +86,8 @@ During the installation 3 protocol types were defined:
 *   DNA Extraction
 *   RNA Extraction
 *   Library Preparation
+
+![](../images/wetlab_configuration/wetlab_manager_protocol_configuration.png)
 
 If you have a look to the right side, inside "Protocol Type" tab, you can see that **DNA Extraction** protocol type was defined to use **DNA** as molecule type. **RNA Extraction** use the **RNA** molecule and the **Library Preparation** does not use any molecule, because this protocol type will be used later, when defining the library preparation parameters.
 
@@ -264,7 +269,6 @@ Inside the kits configuration, the following type of kits need to be defined:
 *   Protocol kits
 *   User Lot Commercial Kits
 
-
 ### Define the Collection Index kits
 
 The collection index are the indexes that will be used in the preparation of the library.
@@ -312,6 +316,8 @@ To help you in the usage of laboratory kits we have split the kits into 2 groups
 *   User Lot kits
 
 The idea of **Commercial Kits** definition is to define general information of the kit, to avoid to repeat every time that a new user Lot Kit is defined.
+
+![](../images/wetlab_configuration/wetlab_manager_commercial_kits_configuration.png)
 
 To define a new commercial kit, select the **Add Commercial Kit** from the PRELIMINARY PREPARATION option menu.
 
