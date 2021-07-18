@@ -9,7 +9,7 @@ These activities required for massive sequencing are separated in 3 main steps:
 
 The figure below shows the workflow activities from the time the new sample is recorded in iSkyLIMS until sample is included in the sequencer.
 
-![](../images/wetlab_workflow/wetlab_sample_workflow2.png)
+![](../images/wetlab_workflow/wetlab_investigator_workflow.png)
 
 
 ## Record new Sample

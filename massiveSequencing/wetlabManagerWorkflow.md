@@ -4,7 +4,7 @@ The Wetlab Manager is now in charge to collect which samples are going to part o
 
 The figure below describes the steps from the moment the sample is defined in iSkyLIMS until the information from the sequencers is collected.
 
-![](../images/wetlab_workflow/wetlab_sample_workflow2.png)
+![](../images/wetlab_workflow/wetlab_manager_workflow.png)
 
 The 2 main tasks for Wetlab Mananger now are:
 

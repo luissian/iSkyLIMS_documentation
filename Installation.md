@@ -8,6 +8,28 @@ iSkyLIMS is born with the aim of helping with the wet laboratory tasks, and impl
 
 Also, iSkyLIMS connects the wet lab with dry lab facilitating data analysis by bioinformaticians.
 
+## Install iSkyLIMS in Docker
+
+To create the Docker image download the installation script
+
+[iskylims_install.sh](https://raw.githubusercontent.com/BU-ISCIII/iSkyLIMS/develop/iskylims_install.sh)
+
+To execute the installation script run
+```
+bash iskylims_install.sh
+```
+
+The script creates a Docker compose container with 2 services:
+
+* web1. Which contains the iSkyLIMS web application
+* db1. With the mySQL database
+
+After Docker is created and services are up, database structure and initial data are loaded into database. When this step is completed you will
+prompt to define the super user which will be the one to connect to "django admin pages". You can type any name, but we recommend that you use "admin" ,
+because admin user is requested later on when defining the initial settings.
+
+Follow the prompt message to create the super user account.
+
 ## Installation prerequisites
 
 estos son los prerequistos
