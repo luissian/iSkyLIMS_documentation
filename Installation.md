@@ -14,7 +14,7 @@ To create the Docker image execute the following commands to download and run th
 
 
 ```
-wget https://raw.githubusercontent.com/BU-ISCIII/iSkyLIMS/develop/iskylims_install.s
+wget https://raw.githubusercontent.com/BU-ISCIII/iSkyLIMS/develop/iskylims_install.sh
 bash iskylims_install.sh
 ```
 
