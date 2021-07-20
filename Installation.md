@@ -10,12 +10,11 @@ Also, iSkyLIMS connects the wet lab with dry lab facilitating data analysis by b
 
 ## Install iSkyLIMS in Docker
 
-To create the Docker image download the installation script
+To create the Docker image execute the following commands to download and run then installation script
 
-[iskylims_install.sh](https://raw.githubusercontent.com/BU-ISCIII/iSkyLIMS/develop/iskylims_install.sh)
 
-To execute the installation script run
 ```
+wget https://raw.githubusercontent.com/BU-ISCIII/iSkyLIMS/develop/iskylims_install.s
 bash iskylims_install.sh
 ```
 
@@ -30,6 +29,10 @@ because admin user is requested later on when defining the initial settings.
 
 Follow the prompt message to create the super user account.
 
-## Installation prerequisites
+When script ends open your navigator and type to access to iSkyLIMS
 
-estos son los prerequistos
+```
+localhost:8000
+```
+
+## Installation prerequisites
