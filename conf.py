@@ -39,13 +39,13 @@ source_suffix = ['.rst', '.md']
 # ones.
 extensions = [
     'sphinx.ext.autodoc',
+    'sphinx.ext.autosectionlabel',
     'sphinx.ext.napoleon',
     'sphinx.ext.ifconfig',
     'sphinx.ext.mathjax',
     'sphinx.ext.viewcode',
     'recommonmark',
-    'sphinx_markdown_tables',
-    'sphinx_rtd_theme,'
+    'sphinx_markdown_tables'
     ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -309,6 +309,6 @@ def setup(app):
         'enable_math': False,
         'enable_inline_math': False,
         'enable_eval_rst': True,
-        #'enable_auto_doc_ref': True,
+        'enable_auto_doc_ref': True,
     }, True)
     app.add_transform(AutoStructify)
