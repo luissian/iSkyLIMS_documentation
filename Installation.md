@@ -20,8 +20,8 @@ bash docker_iskylims_install.sh
 
 The script creates a Docker compose container with 2 services:
 
-- web1. Which contains the iSkyLIMS web application
-- db1. With the mySQL database
+* web1. Which contains the iSkyLIMS web application
+* db1. With the mySQL database
 
 After Docker is created and services are up, database structure and initial data are loaded into database.
 
