@@ -20,8 +20,8 @@ bash docker_iskylims_install.sh
 
 The script creates a Docker compose container with 2 services:
 
-* web1. Which contains the iSkyLIMS web application
-* db1. With the mySQL database
+-   web1. Which contains the iSkyLIMS web application
+-   db1. With the mySQL database
 
 After Docker is created and services are up, database structure and initial data are loaded into database. When this step is completed you will
 prompt to define the super user which will be the one to connect to "django admin pages". You can type any name, but we recommend that you use "admin" ,
@@ -36,14 +36,13 @@ When script ends open your navigator typing **localhost:8000** to access to iSky
 
 ### Pre-requesites
 Before starting the installation check :
-    - You have **sudo privileges** to install the additional software packets that iSkyLIMS needs.
-    - Database (MySQL/MariaDB) is running  
-    - Local server configured for sending emails
-    - Apache server is running on local server
+-   You have **sudo privileges** to install the additional software packets that iSkyLIMS needs.
+-   Database (MySQL/MariaDB) is running  
+-   Local server configured for sending emails
+-   Apache server is running on local server
 
 #### Clone github repository
 ```bash
-
 cd /opt
 sudo git clone https://github.com/BU-ISCIII/iSkyLIMS.git iSkyLIMS
 ```
@@ -52,7 +51,6 @@ sudo git clone https://github.com/BU-ISCIII/iSkyLIMS.git iSkyLIMS
 Open with your favorite editor the configuration file to set your own values for
 database ,email settings and the local IP of the server where iSkyLIMS will run.
 ```bash
-
 sudo nano install_settings.txt
 ```
 
