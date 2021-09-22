@@ -13,9 +13,9 @@ Also, iSkyLIMS connects the wet lab with dry lab facilitating data analysis by b
 To create the Docker image execute the following commands to download and run then installation script
 
 
-```
-wget https://raw.githubusercontent.com/BU-ISCIII/iSkyLIMS/develop/iskylims_install.sh
-bash iskylims_install.sh
+````bash
+git clone https://github.com/BU-ISCIII/iSkyLIMS.git iSkyLIMS
+bash docker_iskylims_install.sh
 ```
 
 The script creates a Docker compose container with 2 services:
@@ -29,10 +29,42 @@ because admin user is requested later on when defining the initial settings.
 
 Follow the prompt message to create the super user account.
 
-When script ends open your navigator and type to access to iSkyLIMS
+When script ends open your navigator typing **localhost:8000** to access to iSkyLIMS
 
+
+## Install iSkyLIMS in your server running ubuntu
+
+### Pre-requesites
+Before starting the installation check :
+    - You have **sudo privileges** to install the additional software packets that iSkyLIMS needs.
+    - Database (MySQL/MariaDB) is running  
+    - Local server configured for sending emails
+    - Apache server is running on local server
+
+#### Clone github repository
+```bash
+
+cd /opt
+sudo git clone https://github.com/BU-ISCIII/iSkyLIMS.git iSkyLIMS
 ```
-localhost:8000
+#### Configuration settings
+
+Open with your favorite editor the configuration file to set your own values for
+database ,email settings and the local IP of the server where iSkyLIMS will run.
+```bash
+
+sudo nano install_settings.txt
 ```
 
-## Installation prerequisites
+### Run installation script
+
+iSkyLIMS will be installed on the "/opt" directory. Before start the installation be sure you have sudo priveleges.
+
+Execute the following commands in a linux terminal.
+
+```bash
+
+sudo bash install.sh
+```
+
+After installation is completed open you navigator typing "localhost" or the "server local IP".
