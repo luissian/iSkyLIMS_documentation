@@ -13,7 +13,7 @@ Also, iSkyLIMS connects the wet lab with dry lab facilitating data analysis by b
 To create the Docker image execute the following commands to download and run then installation script
 
 
-````bash
+```bash
 git clone https://github.com/BU-ISCIII/iSkyLIMS.git iSkyLIMS
 bash docker_iskylims_install.sh
 ```
