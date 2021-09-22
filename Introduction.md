@@ -1,9 +1,8 @@
 # Introduction
 
+The scope of this new functionally in iSkyLIMS is to provide a friendly way to track your samples from the time it is received, track the process/manipulation of the samples, attach the information provided by the sequencer, until the investigator receives the output information from the analysis done using bioinformatics tools.
 
-The scope of this new functionally in iSkyLIMS is to provide a friendly way to track your samples from the time it is registered, continue tracking with the process/manipulation of the samples, attach the information provider by the sequencer, until the investigator receives the output information from the analysis done using bioinformatics tools.
-
-We have built iSkyLIMS, having in mind that different organization have different ways of working and different parameters which you need to track on.
+We have built iSkyLIMS, having in mind that different organization may have different ways of working and different parameters which you need to track on.
 
 To achieve this goal, iSkyLIMS is now modular to give you the chance to install only the functionality that you need it.
 So far 3 different modules have been implemented:
@@ -38,13 +37,11 @@ So for example, when recording a new sample, it can be done either using Clinic 
 ---
 **IMPORTANT:**
 
-Sample name must be unique, to avoid that 2 different samples have the same name which makes confusion
+Sample name must be unique, to avoid samples duplication.
 
 ---
 
-The requirement, that sample names cannot be repeated, is not a limitation on iSkyLIMS but to avoid that information for a sample could be added to a wrong sample because they are sharing the same sample name.
-
-Sometimes, because of the normal sample life process it requires to reuse the sample, like for example to repeat the DNA extraction. In this case, many people name the sample adding “rep” at the end, however this has to be considered a bad practice, because original sample has not changed, just only the manipulation done on the sample. iSkyLIMS allows to specify which process needs to be done by selection the sample and click on the right option.
+Sometimes, because of the normal sample life process it requires to reuse the sample, like for example to repeat the DNA extraction. In this case, many people name the sample adding “rep” at the end, however this is considered a bad practice, because original sample has not changed. iSkyLIMS allows to specify which process needs to be repeted selecting the sample and clicking on the right option.
 
 ## Sample life cycle
 
