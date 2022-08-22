@@ -20,8 +20,8 @@ bash docker_iskylims_install.sh
 
 The script creates a Docker compose container with 2 services:
 
-    *  web1. Which contains the iSkyLIMS web application
-    *  db1. With the mySQL database
+*  web1. Which contains the iSkyLIMS web application
+*  db1. With the mySQL database
 
 After Docker is created and services are up, database structure and initial data are loaded into database.
 
@@ -37,9 +37,9 @@ When script ends open your navigator typing **localhost:8000** to access to iSky
 ### Pre-requesites
 Before starting the installation check :
 
-    - You have **sudo privileges** to install the additional software packets that iSkyLIMS needs.
-    - Database (MySQL/MariaDB) is running
-      
+- You have **sudo privileges** to install the additional software packets that iSkyLIMS needs.
+- Database (MySQL/MariaDB) is running
+
 - Local server configured for sending emails
 - Apache server is running on local server
 

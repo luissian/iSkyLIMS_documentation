@@ -245,6 +245,32 @@ To define the values, write them separating by commas “,” and without any bl
 
 **Description** field is optional and you can type some few words to explain the parameter.
 
+
+The previously way to load the sample project fields is used when there are few parameters. However when large number of parameters are required it is quite hard doing one by one.
+
+For that reason we have created a batch procedure to load them.
+
+Click on the Load batch new fields tab to see the following form.
+
+![](../images/wetlab_configuration/sample_project_fields_batch.png)
+
+The form requieres 3 inputs:
+*   The json schema file ()
+*   Property where to fetch fields (per example: classification)
+*   Selection of the field values (per example):
+    *   Files info
+    *   Database Identifiers
+    *   Host information
+    *   Pathogen diagnostic testing
+    *   Sample collection and processing
+    *   Sequencing
+
+After Submit your request you can see the Sample parameters by selecting again the Sample Project
+
+![](../images/wetlab_configuration/sample_project_already_defined.png)
+
+Then click on the sample project name to see the full list of defined paramters.
+
 ```
 To summarize the steps, to customize all the information that you need to record
 for each sample are:
